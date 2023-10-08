@@ -1,0 +1,43 @@
+import React, { useState } from 'react';
+import './App.css'
+import { NavBar } from './components/navbar';
+import { HiOutlineLocationMarker } from 'react-icons/hi'
+import { Contact } from './components/contact';
+import { About } from './components/about';
+import { TechStack } from './components/stack';
+import { Projects } from './components/projects';
+import { Next } from './components/next';
+import { Footer } from './components/footer';
+
+const App = () => {
+   
+   return <div className='bg-black text-white'>
+      <NavBar />
+      <div style={{height:250}} className='bg-gradient-to-b via-[#00b4d8] from-[#0077b6] to-[#3c6e71]'></div>
+      <img src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696578737/myAvatar_muiijw.png' className='h-[8rem] border mx-auto rounded-full -mt-[3.5rem]' />
+      <p id='top' className='w-fit mx-auto font-bold text-xl'>Enitan Akinfenwa</p>
+      <p className='w-fit mx-auto text-sm'>Frontend Software Developer</p>
+      <p  className='w-fit mx-auto text-gray-500'>
+         <HiOutlineLocationMarker className='inline -mt-1' />
+         Nigeria
+      </p>
+
+      <section className='flex flex-row'>
+         <About />
+         <Contact />
+      </section>
+
+      <TechStack />
+
+      <Projects />
+
+      <Next />
+
+      <Footer />
+   </div>
+}
+
+/*<div style={{height:200}} className='bg-gradient-to-b via-[#00b4d8] from-[#0077b6] to-[#3c6e71]'></div> */
+
+
+export default App;
