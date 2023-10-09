@@ -8,7 +8,7 @@ export const Contact = () => {
 
     const { dark } = useList()
 
-    return <div id="contact" className='border flex-grow mx-[5rem] flex flex-col pl-5 rounded-md'>
+    return <div id="contact" className='border flex-grow h-fit mx-[5rem] flex flex-col p-5 rounded-md'>
 
         <h1 className='text-center text-xl font-bold'>Reach me</h1>
         

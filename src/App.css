@@ -3,5 +3,5 @@ html {
 }
 
 #body, #navbar {
-    transition: background-color .3s linear, color .3s linear; 
+    transition: background-color .3s linear, color .3s linear;
 }
