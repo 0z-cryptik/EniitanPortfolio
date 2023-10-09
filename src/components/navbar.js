@@ -1,3 +1,4 @@
+import { ModeToggle } from "./themeToggle"
 
 export const NavBar = () => {
 
@@ -18,6 +19,8 @@ export const NavBar = () => {
         <a href="#top" className="lg:hover:text-red-700">
             Contact
         </a>
+
+        <ModeToggle />
 
     </nav>
 }
