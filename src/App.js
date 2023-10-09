@@ -14,7 +14,7 @@ const App = () => {
    
    const { dark } = useList()
 
-   return <div className={`${dark ? 'bg-black text-white' : 'bg-white text-black'}`}>
+   return <div id='body' className={`${dark ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <NavBar />
       <div style={{height:250}} className='bg-gradient-to-b via-[#00b4d8] from-[#0077b6] to-[#3c6e71]'></div>
       <img src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696578737/myAvatar_muiijw.png' className='h-[8rem] border mx-auto rounded-full -mt-[3.5rem]' />
