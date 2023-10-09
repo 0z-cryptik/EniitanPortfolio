@@ -6,9 +6,13 @@ import { useList } from "./stateProvider"
 
 export const Contact = () => {
 
-    const { dark } = useList()
+    const { dark, contactClick, setContactClick } = useList()
 
-    return <div id="contact" className='border flex-grow h-fit mx-[5rem] flex flex-col p-5 rounded-md'>
+    if (contactClick) {
+        setTimeout(() => setContactClick(false), 1000)
+    }
+
+    return <div id="contact" className={`border ${contactClick && dark ? 'wobbleDark' : ''} ${contactClick && !dark ? 'wobbleLight' : ''} flex-grow h-fit mx-[5rem] flex flex-col p-5 rounded-md`}>
 
         <h1 className='text-center text-xl font-bold'>Reach me</h1>
         

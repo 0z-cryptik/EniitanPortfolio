@@ -15,7 +15,7 @@ export const NewsByEniitan = () => {
 
         <div className="relative" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
 
-            <img  className={`mb-5 border ${hover && dark ? 'lg:opacity-40' : ''} ${hover ? 'lg:opacity-50' : ''} transition-opacity ease-linear`} src="https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696658942/Screenshot_93_3_ibfpdo.png" />
+            <img  className={`mb-5 border ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear`} src="https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696658942/Screenshot_93_3_ibfpdo.png" />
 
             <div className={`${hover ? 'opacity-100' : 'opacity-0'} transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
                 <a className='mr-1' href="https://github.com/0z-cryptik/news-by-eniitan">
