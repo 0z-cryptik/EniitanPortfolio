@@ -11,7 +11,6 @@ import { Footer } from './components/footer';
 import { useList } from './components/stateProvider';
 import  MyAvatar  from './images/myAvatar.png'
 import { Img } from 'react-image'
-import { ClipLoader } from 'react-spinners'
 import { AvatarLoader } from './components/imgLoader';
 
 const App = () => {
