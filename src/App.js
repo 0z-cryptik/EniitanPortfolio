@@ -37,7 +37,5 @@ const App = () => {
    </div>
 }
 
-/*<div style={{height:200}} className='bg-gradient-to-b via-[#00b4d8] from-[#0077b6] to-[#3c6e71]'></div> */
-
 
 export default App;

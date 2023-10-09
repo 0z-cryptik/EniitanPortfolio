@@ -28,8 +28,3 @@ export const Footer = () => {
         </center>
     </footer>
 }
-
-/*<span id="logo" className="w-fit">
-                <AiOutlineCode className="inline -mt-1 mr-1" size={'2rem'} />
-                Built By Eniitan
-            </span> */
