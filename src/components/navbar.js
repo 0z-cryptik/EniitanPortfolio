@@ -1,8 +1,11 @@
 import { ModeToggle } from "./themeToggle"
+import { useList } from "./stateProvider"
 
 export const NavBar = () => {
 
-    return <nav className='justify-center py-3 flex flex-row fixed w-full z-10 bg-[#140F2D]'>
+    const { dark, setDark } = useList()
+
+    return <nav className={`justify-center py-3 flex flex-row fixed w-full z-10 ${dark ? 'bg-[#140F2D] text-white' : 'bg-blue-400 text-black'}`}>
 
         <a href="https://0zcryptik.hashnode.dev/" className='mr-[2rem] lg:hover:text-red-700'>
             Blog
