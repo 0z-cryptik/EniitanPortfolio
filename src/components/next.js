@@ -5,15 +5,15 @@ export const Next = () => {
             What's next for me?
         </h1>
 
-        <section>
+        <article>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum auctor arcu, vel euismod nulla volutpat eget. Nullam et fermentum justo. Vivamus tristique mi id erat viverra, vel dictum ex lacinia. 
+                My next big plan is to dive into backend development with Node JS and Mongo DB or SQL for the database so that I can build fully functional web apps, also I plan to learn Typescript because many jobs require it. 
             </p>
 
             <p className='mt-3'>
-                Praesent vel bibendum libero. Curabitur ac malesuada massa. In at cursus tellus. Sed hendrerit massa nec urna venenatis, in scelerisque velit tristique. Sed vehicula felis eu aliquet suscipit.
+                But before all that excitement, I'm hunting for my first job to kickstart this journey. I'm eager to roll up my sleeves, learn on the job, and grow with the right opportunity. So, here I am, hoping you might be the one to give that to me.
             </p>
-        </section>
-        
+        </article>
+
     </section>
 }
