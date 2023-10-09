@@ -4,6 +4,8 @@ import { PiGithubLogo } from "react-icons/pi"
 import { GoLinkExternal } from "react-icons/go"
 import { useState } from "react"
 import { useList } from "./stateProvider"
+import newsPic from "../images/newsByEniitan.png"
+import cssLogo from '../images/pngwing.com (2).png'
 
 export const NewsByEniitan = () => {
     const [hover, setHover] = useState(false)
@@ -15,7 +17,7 @@ export const NewsByEniitan = () => {
 
         <div className="relative" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
 
-            <img  className={`mb-5 border ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear`} src="https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696658942/Screenshot_93_3_ibfpdo.png" />
+            <img  className={`mb-5 border ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear`} src={newsPic} />
 
             <div className={`${hover ? 'opacity-100' : 'opacity-0'} transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
                 <a className='mr-1' href="https://github.com/0z-cryptik/news-by-eniitan">
@@ -56,7 +58,7 @@ export const NewsByEniitan = () => {
                     React JS
                 </div>
                 <div className='text-center mr-7'>
-                    <img className='mx-auto w-[3rem] mb-2' src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696602984/pngwing.com_2_xn3gua.png' />
+                    <img className='mx-auto w-[3rem] mb-2' src={cssLogo} />
                     CSS
                 </div>
                 <div className='text-center mr-7'>

@@ -2,6 +2,12 @@ import { SiTailwindcss, SiAxios, SiVercel } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
 import { IoLogoNpm } from 'react-icons/io'
+import htmlLogo from '../images/icons8-html-logo-480.png'
+import cssLogo from '../images/pngwing.com (2).png'
+import jsLogo from '../images/javascript-39404.png'
+import jqLogo from '../images/jquery.png'
+import gitLogo from '../images/pngwing.com.png'
+import pythonLogo from '../images/python.png'
 
 export const TechStack = () => {
 
@@ -16,17 +22,17 @@ export const TechStack = () => {
 
         <section className='grid grid-cols-7 font-bold'>
             <div className='text-center'>
-                <img className='w-[5rem] h-[5rem] mx-auto py-[0.2rem] mb-4' src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696605175/icons8-html-logo-480_vvafk1.png' />
+                <img className='w-[5rem] h-[5rem] mx-auto py-[0.2rem] mb-4' src={htmlLogo} />
                 HTML
             </div>
 
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696602984/pngwing.com_2_xn3gua.png' />
+                <img className='mx-auto w-[5rem] mb-4' src={cssLogo} />
                 CSS
             </div>
 
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696601640/javascript-39404_wlsnvj.png' />
+                <img className='mx-auto w-[5rem] mb-4' src={jsLogo} />
                 JavaScript
             </div>
 
@@ -45,12 +51,12 @@ export const TechStack = () => {
             </div>
 
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696602984/jquery_occhjv.png' />
+                <img className='mx-auto w-[5rem] mb-4' src={jqLogo} />
                 JQuery
             </div>
 
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696602353/pngwing.com_zemvx5.png' />
+                <img className='mx-auto w-[5rem] mb-4' src={gitLogo} />
                 Git
             </div>
 
@@ -60,7 +66,7 @@ export const TechStack = () => {
             </div>
 
             <div className='text-center mt-7'>
-                <img className='mx-auto w-[5rem] mb-4' src='https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696601990/pngwing.com_fey6wn.png' />
+                <img className='mx-auto w-[5rem] mb-4' src={pythonLogo} />
                 Python
             </div>
        
