@@ -3,9 +3,11 @@ import { SiTailwindcss, SiAxios } from "react-icons/si"
 import { PiGithubLogo } from "react-icons/pi"
 import { GoLinkExternal } from "react-icons/go"
 import { useState } from "react"
+import { useList } from "./stateProvider"
 
 export const WeatherByEniitan = () => {
     const [hover, setHover] = useState(false)
+    const { dark } = useList()
 
     return <figure className="w-[80%] border p-5 rounded-xl mx-auto mt-7 ">
 
@@ -13,7 +15,7 @@ export const WeatherByEniitan = () => {
 
         <div className="relative" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
 
-            <img  className={`mb-5 ${hover ? 'opacity-70' : ''} transition-opacity ease-linear border`} src="https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696658941/Screenshot_94_4_hymnmo.png" />
+            <img  className={`mb-5 ${hover && dark ? 'lg:opacity-40' : ''} ${hover ? 'lg:opacity-50' : ''} transition-opacity ease-linear border`} src="https://res.cloudinary.com/ds7xwxu4j/image/upload/v1696658941/Screenshot_94_4_hymnmo.png" />
 
             <div className={`${hover ? 'opacity-100' : 'opacity-0'} transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
                 <a className='mr-1' href="https://github.com/0z-cryptik/news-by-eniitan">
