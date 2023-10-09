@@ -24,7 +24,7 @@ export const Footer = () => {
                 </a>
             </span>
 
-            <p className="mt-3 text-sm"> &copy; {date(new Date)} BuiltByEniitan</p>
+            <p id="copyright" className="mt-3 text-sm"> &copy; {date(new Date)} BuiltByEniitan</p>
         </center>
     </footer>
 }
