@@ -10,6 +10,9 @@ import { Next } from './components/next';
 import { Footer } from './components/footer';
 import { useList } from './components/stateProvider';
 import  MyAvatar  from './images/myAvatar.png'
+import { Img } from 'react-image'
+import { ClipLoader } from 'react-spinners'
+import { AvatarLoader } from './components/imgLoader';
 
 const App = () => {
    
@@ -18,7 +21,7 @@ const App = () => {
    return <div id='body' className={`${dark ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <NavBar />
       <div style={{height:250}} className='bg-gradient-to-b via-[#00b4d8] from-[#0077b6] to-[#3c6e71]'></div>
-      <img src={MyAvatar} className='h-[8rem] border mx-auto rounded-full -mt-[3.5rem]' />
+      <Img src={MyAvatar} className='h-[8rem] w-[128px] border mx-auto rounded-full -mt-[3.5rem]' loader={<AvatarLoader />} />
       <p id='top' className='w-fit mx-auto font-bold text-xl'>Enitan Akinfenwa</p>
       <p className='w-fit mx-auto text-sm'>Frontend Software Developer</p>
       <p  className='w-fit mx-auto text-gray-500'>

@@ -7,6 +7,8 @@ import { useList } from "./stateProvider"
 import weatherPic from '../images/weatherByEniitan.png'
 import cssLogo from '../images/pngwing.com (2).png'
 import rapidAPIlogo from '../images/rapidapi-icon.svg'
+import { Img } from 'react-image'
+import { ImgLoader } from "./imgLoader"
 
 export const WeatherByEniitan = () => {
     const [hover, setHover] = useState(false)
@@ -18,7 +20,7 @@ export const WeatherByEniitan = () => {
 
         <div className="relative" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
 
-            <img  className={`mb-5 ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear border`} src={weatherPic}/>
+            <Img className={`mb-5 ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear border`} src={weatherPic} loader={<ImgLoader />} />
 
             <div className={`${hover ? 'opacity-100' : 'opacity-0'} transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
                 <a className='mr-1' href="https://github.com/0z-cryptik/news-by-eniitan">

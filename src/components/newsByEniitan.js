@@ -6,6 +6,8 @@ import { useState } from "react"
 import { useList } from "./stateProvider"
 import newsPic from "../images/newsByEniitan.png"
 import cssLogo from '../images/pngwing.com (2).png'
+import { Img } from 'react-image'
+import { ImgLoader } from "./imgLoader"
 
 export const NewsByEniitan = () => {
     const [hover, setHover] = useState(false)
@@ -17,7 +19,7 @@ export const NewsByEniitan = () => {
 
         <div className="relative" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
 
-            <img  className={`mb-5 border ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear`} src={newsPic} />
+            <Img className={`mb-5 border ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear`} src={newsPic} loader={<ImgLoader />} />
 
             <div className={`${hover ? 'opacity-100' : 'opacity-0'} transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
                 <a className='mr-1' href="https://github.com/0z-cryptik/news-by-eniitan">
