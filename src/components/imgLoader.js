@@ -12,11 +12,12 @@ export const ImgLoader = () => {
 
 export const AvatarLoader = () => {
 
-    const { dark } = useList()
-
     return <div className='flex justify-center items-center w-full h-[8rem] -mt-[3.5rem]'>
+
         <span className='h-full w-[128px] border bg-gray-300 rounded-full flex justify-center items-center'>
             <ClipLoader color='black' />
         </span>
+        
     </div>
+
 }

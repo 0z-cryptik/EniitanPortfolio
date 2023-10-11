@@ -10,34 +10,47 @@ import { Img } from 'react-image'
 import { ImgLoader } from "./imgLoader"
 
 export const NewsByEniitan = () => {
+
     const [hover, setHover] = useState(false)
     const { dark } = useList()
 
     return <figure className="w-[80%] border p-5 rounded-xl mx-auto mt-7">
 
-        <h1 className="mx-auto w-fit text-xl font-semibold mb-5">News By Eniitan</h1>
+        <h1 className="mx-auto w-fit text-xl font-semibold mb-5">
+            News By Eniitan
+        </h1>
 
         <div className="relative" onMouseOver={() => setHover(true)} onMouseLeave={() => setHover(false)}>
 
             <Img className={`mb-5 border ${hover && dark ? 'lg:opacity-40' : ''} ${hover && !dark ? 'lg:opacity-50' : ''} transition-opacity ease-linear`} src={newsPic} loader={<ImgLoader />} />
 
             <div className={`${hover ? 'opacity-100' : 'opacity-0'} transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
+
                 <a className='mr-1' href="https://github.com/0z-cryptik/news-by-eniitan">
                     <PiGithubLogo className="w-fit" size={'9rem'} title="repositary" />
                 </a>
                 <a className='' href="https://news-by-eniitan.vercel.app">
                     <GoLinkExternal className="w-fit" size={'9rem'} title="view site" />
                 </a>
+
             </div>
             
         </div>
         <figcaption>
-            <h2 className="text-lg font-bold border-b mb-3">About</h2>
+            <h2 className="text-lg font-bold border-b mb-3">
+                About
+            </h2>
+
             <p>
                 This News Web App is a user-friendly web application that allows users to enjoy news summaries from around the world across various categories in their feed, users can get a general grasp of happenings around the world without having to read much, and should they come across an headline that interests them, they can click on the headline to read the full article. 
             </p>
-            <h2 className="mt-5 text-lg font-bold border-b mb-3">Features</h2>
+
+            <h2 className="mt-5 text-lg font-bold border-b mb-3">
+                Features
+            </h2>
+
             <ul className="list-disc ml-5">
+
                 <li className="mb-3">
                     <b>News Feed:</b> Users can stay up-to-date with news summaries from various sources and categories in one convenient feed.
                 </li>
@@ -50,6 +63,7 @@ export const NewsByEniitan = () => {
                 <li>
                     <b>Responsive Design:</b> The application is designed to provide an optimal experience on phones, PCs and tablets, with a user-friendly menu for easy navigation between different news categories (on phones & tablets).
                 </li>
+                
             </ul>
             <h2 className="my-5 text-lg font-bold border-b">Tech Stack</h2>
             <div className="flex flex-row font-semibold">

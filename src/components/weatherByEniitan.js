@@ -11,6 +11,7 @@ import { Img } from 'react-image'
 import { ImgLoader } from "./imgLoader"
 
 export const WeatherByEniitan = () => {
+    
     const [hover, setHover] = useState(false)
     const { dark } = useList()
 
@@ -33,12 +34,20 @@ export const WeatherByEniitan = () => {
 
         </div>
         <figcaption>
-            <h2 className="text-lg font-bold border-b mb-3">About</h2>
+            <h2 className="text-lg font-bold border-b mb-3">
+                About
+            </h2>
+
             <p>
                 Weather By Eniitan is a simple and user-friendly web application that provides current weather information and weather forecasts for your location or any city in the world. It also allows you to toggle between Celsius and Fahrenheit modes, remembering your preference for future visits. 
             </p>
-            <h2 className="mt-5 text-lg font-bold border-b mb-3">Features</h2>
+
+            <h2 className="mt-5 text-lg font-bold border-b mb-3">
+                Features
+            </h2>
+
             <ul className="list-disc ml-5">
+
                 <li className="mb-3">
                     <b>Location-Based Weather:</b> When you grant permission to access your location, the app will display the current weather and forecasts for that location.
                 </li>
@@ -54,25 +63,34 @@ export const WeatherByEniitan = () => {
                 <li>
                     <b>Remembers Your Preference:</b> Your selected temperature unit (Celsius or Fahrenheit) will be remembered and applied every time you revisit the site, providing a personalized experience.
                 </li>
+
             </ul>
-            <h2 className="my-5 text-lg font-bold border-b">Tech Stack</h2>
+
+            <h2 className="my-5 text-lg font-bold border-b">
+                Tech Stack
+            </h2>
+
             <div className="flex flex-row font-semibold">
+
                 <div className='text-center mr-7'>
                     <span className='text-blue-400'>
                         <FaReact className='mx-auto mb-2' size={'3rem'} />
                     </span>
                     React JS
                 </div>
+
                 <div className='text-center mr-7'>
                     <img className='mx-auto w-[3rem] mb-2' src={cssLogo} />
                     CSS
                 </div>
+
                 <div className='text-center mr-7'>
                     <span className='text-blue-400'>
                         <SiTailwindcss className='mx-auto mb-2' size={'3rem'} />
                     </span>
                     Tailwind CSS
                 </div>
+
                 <div className='text-center mr-7'>
                     <SiAxios className='mx-auto mb-2' size={'3rem'} />
                     Axios
@@ -82,14 +100,19 @@ export const WeatherByEniitan = () => {
                     <img className="mx-auto mb-2 w-[3rem]" src={rapidAPIlogo} />
                     Rapid API
                 </div>
+
             </div>
+
             <span className="w-fit mx-auto flex flex-row mt-5 text-gray-500">
+
                 <a className="lg:hover:text-red-600" href="https://github.com/0z-cryptik/weather-by-eniitan">
                     <PiGithubLogo className="mr-2" size={'1.5rem'} title="repositary" />
                 </a>
+
                 <a className="lg:hover:text-red-600" href="https://weather-by-eniitan.vercel.app">
                     <GoLinkExternal size={'1.5rem'} title="view site" />
                 </a>
+
             </span>
         </figcaption>
     </figure>
