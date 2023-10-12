@@ -1,7 +1,12 @@
+import useSticky from "./myhooks"
+
+
 export const About = () => {
 
-    return <article className='mt-6 ml-[3rem] w-[60%]'>
-        <h1 className='text-3xl font-semibold border-b  mb-4'>
+    //const { element } = useSticky()
+
+    return <article className='mt-6 lg:ml-[3rem] lg:w-[60%] min-[100px]:max-md:px-5 bg-black text-white'>
+        <h1 className='text-3xl hidden lg:block font-semibold border-b  mb-4'>
             About me
         </h1>
 
@@ -18,4 +23,7 @@ export const About = () => {
             Then, one day, I sat myself down and asked the question I should have asked a long time ago: <q><i>What kind of software do I want to build?</i></q> It was then that I realized I wanted to create websites and mobile apps with incredible user experiences. So, I embarked on a new journey as a frontend developer, and I'm never looking back.
         </p>
     </article>
+    
 }
+
+export const About2 = () => <p className="text-white bg-black">yooooooooooooooooooooooo</p>

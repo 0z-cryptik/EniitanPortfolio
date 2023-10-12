@@ -1,5 +1,8 @@
 import { ModeToggle } from "./themeToggle"
 import { useList } from "./stateProvider"
+import { Link } from "react-router-dom"
+import { useEffect } from "react"
+import useSticky from "./myhooks"
 
 export const NavBar = () => {
 
@@ -26,4 +29,38 @@ export const NavBar = () => {
         <ModeToggle />
 
     </nav>
+}
+
+export const PhoneNavBar = () => {
+
+    const { dark } = useList()
+
+    const { sticky, element } = useSticky()
+
+    if (sticky){
+        console.log('sticky')
+    }
+
+    if (!sticky) {
+        console.log('not sticky')
+    }
+
+    return <nav ref={element} className={`lg:hidden flex flex-row mt-7 relative ${sticky ? 'sticky top-0' : ''} text-center w-[100vw]`}>
+        <Link to={'about'} className="w-1/4">
+            About Me
+        </Link>
+
+        <span className="w-1/4">
+            Tech Stack
+        </span>
+
+        <span className="w-1/4">
+            Projects
+        </span>
+
+        <span className="w-1/4">
+            Contact
+        </span>
+    </nav>
+
 }

@@ -11,7 +11,7 @@ import pythonLogo from '../images/python.png'
 
 export const TechStack = () => {
 
-    return <section id="tech-stack" className='mt-[5rem] mx-[3rem]'>
+    return <section id="tech-stack" className='mt-[5rem] mx-[3rem] hidden lg:block'>
         <h1 className='text-3xl font-semibold border-b'>
             My Tech Stack
         </h1>

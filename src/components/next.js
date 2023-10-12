@@ -1,5 +1,5 @@
 export const Next = () => {
-    return <section className='mt-[5rem] mx-[3rem]'>
+    return <section className='mt-[5rem] mx-[3rem] hidden lg:block'>
 
         <h1 className='text-3xl font-semibold border-b mb-4'>
             What's next for me?

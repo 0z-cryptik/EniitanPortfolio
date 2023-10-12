@@ -8,7 +8,7 @@ export const Footer = () => {
         return year
     }
 
-    return <footer className="border-t-[0.5px] mt-[5rem] py-6 bg-[#121212] border-t-gray-600 text-gray-500">
+    return <footer className="  border-t-[0.5px] mt-[5rem] py-6 bg-[#121212] border-t-gray-600 text-gray-500 w-[100svw] lg:w-full">
         <center>
             
 
