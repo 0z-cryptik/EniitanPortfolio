@@ -1,46 +1,48 @@
 import { useEffect, useState, useRef } from "react";
 
 const useSticky = () => {
-    const [sticky, setSticky] = useState(false)
-    const element = useRef(null)
+    const [sticky, setSticky] = useState(false);
+    const element = useRef(null);
 
     const handleScroll = () => {
-        if (element.current){
-            if (window.scrollY > element.current.getBoundingClientRect().bottom) {
-                setSticky(true)
+        if (element.current) {
+            if (
+                window.scrollY > element.current.getBoundingClientRect().bottom
+            ) {
+                setSticky(true);
             } else {
-                setSticky(false)
+                setSticky(false);
             }
         }
-    }
+    };
 
     const debounce = (func, wait = 20, immediate = true) => {
-        let timeOut
+        let timeOut;
 
         return () => {
             let context = this,
-                args = arguments
-            
-            const later = () => {
-                timeOut = null
-                if (!immediate) func.apply(context, args)
-            }
+                args = arguments;
 
-            const callNow = immediate && !timeOut
-            clearTimeout(timeOut)
-            timeOut = setTimeout(later, wait)
-            if (callNow) func.apply(context, args)
-        }
-    }
+            const later = () => {
+                timeOut = null;
+                if (!immediate) func.apply(context, args);
+            };
+
+            const callNow = immediate && !timeOut;
+            clearTimeout(timeOut);
+            timeOut = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
 
     useEffect(() => {
-        window.addEventListener('scroll', debounce(handleScroll))
+        window.addEventListener("scroll", debounce(handleScroll));
         return () => {
-            window.removeEventListener('scroll', () => handleScroll)
-        }
-    }, [debounce, handleScroll])
+            window.removeEventListener("scroll", () => handleScroll);
+        };
+    }, [debounce, handleScroll]);
 
-    return { sticky, element }
-}
+    return { sticky, element };
+};
 
-export default useSticky
+export default useSticky;
