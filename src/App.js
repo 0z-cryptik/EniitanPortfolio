@@ -39,11 +39,14 @@ const App = () => {
          <Contact />
       </section>
 
-      <TechStack />
+      <div className='hidden lg:block'>
+         <TechStack />
 
-      <Projects />
+         <Projects />
 
-      <Next />
+         <Next />
+      </div>
+
       <Outlet />
       <Footer />
 

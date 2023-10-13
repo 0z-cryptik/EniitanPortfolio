@@ -1,7 +1,7 @@
 import { ModeToggle } from "./themeToggle"
 import { useList } from "./stateProvider"
 import { Link } from "react-router-dom"
-import { useEffect } from "react"
+import { useState } from "react"
 import useSticky from "./myhooks"
 
 export const NavBar = () => {
@@ -37,30 +37,24 @@ export const PhoneNavBar = () => {
 
     const { sticky, element } = useSticky()
 
-    if (sticky){
-        console.log('sticky')
-    }
+    const [active, setActive] = useState('about')
 
-    if (!sticky) {
-        console.log('not sticky')
-    }
-
-    return <nav ref={element} className={`lg:hidden flex flex-row mt-7 relative ${sticky ? 'sticky top-0' : ''} text-center w-[100vw]`}>
-        <Link to={'about'} className="w-1/4">
+    return <nav ref={element} className={`lg:hidden flex border-b pt-3 flex-row mt-7 relative ${sticky ? 'sticky top-0 z-10 bg-black' : ''} text-center w-[100vw]`}>
+        <Link to={'about'} onClick={() => setActive('about')} className={`w-1/4 pb-2 font-bold ${active === 'about' ? 'border-b-4 border-b-blue-700' : ''}`}>
             About Me
         </Link>
 
-        <span className="w-1/4">
+        <Link to={'tech-stack'} onClick={() => setActive('stack')} className={`w-1/4 pb-2 font-bold ${active === 'stack' ? 'border-b-4 border-b-blue-700' : ''}`}>
             Tech Stack
-        </span>
+        </Link>
 
-        <span className="w-1/4">
+        <Link to={'projects'} onClick={() => setActive('projects')} className={`w-1/4 pb-2 font-bold ${active === 'projects' ? 'border-b-4 border-b-blue-700' : ''}`}>
             Projects
-        </span>
+        </Link>
 
-        <span className="w-1/4">
+        <Link to={'contact'} onClick={() => setActive('contact')} className={`w-1/4 pb-2 font-bold ${active === 'contact' ? 'border-b-4 border-b-blue-700' : ''}`}>
             Contact
-        </span>
+        </Link>
     </nav>
 
 }

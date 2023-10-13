@@ -1,14 +1,16 @@
 import { useEffect, useState, useRef } from "react";
 
-function useSticky () {
+const useSticky = () => {
     const [sticky, setSticky] = useState(false)
     const element = useRef(null)
 
     const handleScroll = () => {
         if (element.current){
-            window.scrollY > element.current.getBoundingClientRect().bottom
-                ? setSticky(true)
-                : setSticky(false)
+            if (window.scrollY > element.current.getBoundingClientRect().bottom) {
+                setSticky(true)
+            } else {
+                setSticky(false)
+            }
         }
     }
 

@@ -11,82 +11,114 @@ import pythonLogo from '../images/python.png'
 
 export const TechStack = () => {
 
-    return <section id="tech-stack" className='mt-[5rem] mx-[3rem] hidden lg:block'>
-        <h1 className='text-3xl font-semibold border-b'>
+    return <section id="tech-stack" className='lg:mt-[5rem] lg:mx-[3rem] min-[100px]:max-md:px-2'>
+        <h1 className='text-3xl font-semibold border-b hidden lg:block'>
             My Tech Stack
         </h1>
 
-        <h2 className="my-6 w-fit mx-auto text-lg font-semibold">
+        <h2 className="lg:my-6 my-4 w-fit mx-auto lg:text-lg font-semibold">
             Programming languages and frameworks/libraries
         </h2>
 
-        <section className='grid grid-cols-7 font-bold'>
+        <section className='grid grid-cols-4 min-[100px]:max-md:gap-y-4 lg:grid-cols-7 font-bold'>
             <div className='text-center'>
-                <img className='w-[5rem] h-[5rem] mx-auto py-[0.2rem] mb-4' src={htmlLogo} />
+                <img className='lg:w-[5rem] w-[3.5rem] lg:h-[5rem] h-[3.5rem] mx-auto py-[0.2rem] mb-4' src={htmlLogo} />
                 HTML
             </div>
 
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src={cssLogo} />
+                <img className='mx-auto lg:w-[5rem] w-[3.5rem] mb-4' src={cssLogo} />
                 CSS
             </div>
 
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src={jsLogo} />
+                <img className='mx-auto lg:w-[5rem] w-[3.5rem] mb-4' src={jsLogo} />
                 JavaScript
             </div>
 
-            <div className='text-center'>
+            <div className='text-center hidden lg:block'>
                 <span className='text-blue-400'>
                     <FaReact className='mx-auto mb-4' size={'5rem'} />
                 </span>
                 React JS
             </div>
 
-            <div className='text-center'>
+            <div className='text-center lg:hidden'>
+                <FaReact color="rgb(96, 165, 250)" className='mx-auto mb-4' size={'3.5rem'} />
+                React JS
+            </div>
+
+            <div className='text-center hidden lg:block'>
                 <span className='text-blue-400'>
                     <SiTailwindcss className='mx-auto mb-4' size={'5rem'} />
                 </span>
                 Tailwind CSS
             </div>
 
+            <div className='text-center lg:hidden'>
+                <SiTailwindcss color="rgb(96, 165, 250)" className='mx-auto mb-4' size={'3.5rem'} />
+                Tailwind CSS
+            </div>
+
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src={jqLogo} />
+                <img className='mx-auto lg:w-[5rem] w-[3.5rem] mb-4' src={jqLogo} />
                 JQuery
             </div>
 
             <div className='text-center'>
-                <img className='mx-auto w-[5rem] mb-4' src={gitLogo} />
+                <img className='mx-auto lg:w-[5rem] w-[3.5rem] mb-4' src={gitLogo} />
                 Git
             </div>
 
-            <div className='text-center mt-7'>
+            <div className='text-center mt-7 hidden lg:block'>
                 <SiAxios className='mx-auto mb-4' size={'5rem'} />
                 Axios
             </div>
 
-            <div className='text-center mt-7'>
-                <img className='mx-auto w-[5rem] mb-4' src={pythonLogo} />
+            <div className='text-center lg:mt-7 lg:hidden'>
+                <SiAxios className='mx-auto mb-4' size={'3.5rem'} />
+                Axios
+            </div>
+
+            <div className='text-center lg:mt-7'>
+                <img className='mx-auto lg:w-[5rem] w-[3.5rem] mb-4' src={pythonLogo} />
                 Python
             </div>
        
         </section>
 
-        <h2 className="mt-9 mb-6 w-fit mx-auto text-lg font-semibold">
+        <h2 className="mt-9 mb-6 w-fit mx-auto lg:text-lg font-semibold">
             Dev Tools
         </h2>
 
-        <section className="grid grid-cols-7 font-bold">
-            <div className='text-center mt-7'>
+        <section className="grid grid-cols-4 lg:grid-cols-7 font-bold">
+            <div className='text-center mt-7 hidden lg:block'>
                 <AiFillGithub className='mx-auto mb-4' size={'5rem'} />
                 Github
             </div>
-            <div className='text-center mt-7'>
+
+            <div className='text-center lg:hidden'>
+                <AiFillGithub className='mx-auto mb-4' size={'3.5rem'} />
+                Github
+            </div>
+
+            <div className='text-center mt-7 hidden lg:block'>
                 <SiVercel className='mx-auto mb-4' size={'5rem'} />
                 Vercel
             </div>
-            <div className='text-center mt-7'>
+
+            <div className='text-center lg:hidden'>
+                <SiVercel className='mx-auto mb-4' size={'3.5rem'} />
+                Vercel
+            </div>
+
+            <div className='text-center mt-7 hidden lg:block'>
                 <IoLogoNpm className='mx-auto mb-4' size={'5rem'} color="red" />
+                Node Package Manager
+            </div>
+
+            <div className='text-center lg:hidden'>
+                <IoLogoNpm className='mx-auto mb-4' size={'3.5rem'} color="red" />
                 Node Package Manager
             </div>
         </section>

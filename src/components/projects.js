@@ -3,7 +3,7 @@ import { WeatherByEniitan } from "./weatherByEniitan"
 
 export const Projects = () => {
 
-    return <section id="projects" className='mt-[5rem] mx-[3rem] hidden lg:block'>
+    return <section id="projects" className='mt-[5rem] mx-[3rem]'>
         <h1  className='text-3xl font-semibold border-b mb-4'>
             Projects
         </h1>
