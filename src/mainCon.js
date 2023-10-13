@@ -8,11 +8,25 @@ import { Contact } from "./components/contact";
 export const MainCon = () => {
     return (
         <Routes>
-            <Route path="/" element={<App />}>
-                <Route path="/about" element={<About />} />
-                <Route path="/tech-stack" element={<TechStack />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
+            <Route
+                path="/"
+                element={<App />}>
+                <Route
+                    path="/about"
+                    element={<About />}
+                />
+                <Route
+                    path="/tech-stack"
+                    element={<TechStack />}
+                />
+                <Route
+                    path="/projects"
+                    element={<Projects />}
+                />
+                <Route
+                    path="/contact"
+                    element={<Contact />}
+                />
             </Route>
         </Routes>
     );

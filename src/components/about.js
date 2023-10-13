@@ -1,4 +1,3 @@
-
 export const About = () => {
     return (
         <article className="mt-6 lg:ml-[3rem] lg:w-[60%] min-[100px]:max-md:px-5 bg-black text-white">

@@ -8,27 +8,38 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="  border-t-[0.5px] mt-[5rem] py-6 bg-[#121212] border-t-gray-600 text-gray-500 w-[100svw] lg:w-full">
+        <footer className="border-t-[0.5px] mt-[5rem] py-6 bg-[#121212] border-t-gray-600 text-gray-500 w-[100svw] lg:w-full">
             <center>
                 <span className="flex flex-row w-fit mx-auto mt-3">
                     <a
                         href="https://www.linkedin.com/in/enitan-a-b36527205"
                         className="lg:hover:text-white">
-                        <AiFillLinkedin className="mr-3" size={"1.5rem"} />
+                        <AiFillLinkedin
+                            className="mr-3"
+                            size={"1.5rem"}
+                        />
                     </a>
                     <a
                         href="https://github.com/0z-cryptik"
                         className="lg:hover:text-white">
-                        <AiOutlineGithub className="mr-3" size={"1.5rem"} />
+                        <AiOutlineGithub
+                            className="mr-3"
+                            size={"1.5rem"}
+                        />
                     </a>
                     <a
                         href="mailto:enitanolawale0@gmail.com"
                         className="lg:hover:text-white">
-                        <ImMail4 className="" size={"1.5rem"} />
+                        <ImMail4
+                            className=""
+                            size={"1.5rem"}
+                        />
                     </a>
                 </span>
 
-                <p id="copyright" className="mt-3 text-sm">
+                <p
+                    id="copyright"
+                    className="mt-3 text-sm">
                     &copy; {date(new Date())} BuiltByEniitan
                 </p>
             </center>

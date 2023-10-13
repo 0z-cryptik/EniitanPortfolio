@@ -49,7 +49,10 @@ export const TechStack = () => {
 
                 <div className="text-center hidden lg:block">
                     <span className="text-blue-400">
-                        <FaReact className="mx-auto mb-4" size={"5rem"} />
+                        <FaReact
+                            className="mx-auto mb-4"
+                            size={"5rem"}
+                        />
                     </span>
                     React JS
                 </div>
@@ -65,7 +68,10 @@ export const TechStack = () => {
 
                 <div className="text-center hidden lg:block">
                     <span className="text-blue-400">
-                        <SiTailwindcss className="mx-auto mb-4" size={"5rem"} />
+                        <SiTailwindcss
+                            className="mx-auto mb-4"
+                            size={"5rem"}
+                        />
                     </span>
                     Tailwind CSS
                 </div>
@@ -96,12 +102,18 @@ export const TechStack = () => {
                 </div>
 
                 <div className="text-center mt-7 hidden lg:block">
-                    <SiAxios className="mx-auto mb-4" size={"5rem"} />
+                    <SiAxios
+                        className="mx-auto mb-4"
+                        size={"5rem"}
+                    />
                     Axios
                 </div>
 
                 <div className="text-center lg:mt-7 lg:hidden">
-                    <SiAxios className="mx-auto mb-4" size={"3.5rem"} />
+                    <SiAxios
+                        className="mx-auto mb-4"
+                        size={"3.5rem"}
+                    />
                     Axios
                 </div>
 
@@ -120,22 +132,34 @@ export const TechStack = () => {
 
             <section className="grid grid-cols-4 lg:grid-cols-7 font-bold">
                 <div className="text-center mt-7 hidden lg:block">
-                    <AiFillGithub className="mx-auto mb-4" size={"5rem"} />
+                    <AiFillGithub
+                        className="mx-auto mb-4"
+                        size={"5rem"}
+                    />
                     Github
                 </div>
 
                 <div className="text-center lg:hidden">
-                    <AiFillGithub className="mx-auto mb-4" size={"3.5rem"} />
+                    <AiFillGithub
+                        className="mx-auto mb-4"
+                        size={"3.5rem"}
+                    />
                     Github
                 </div>
 
                 <div className="text-center mt-7 hidden lg:block">
-                    <SiVercel className="mx-auto mb-4" size={"5rem"} />
+                    <SiVercel
+                        className="mx-auto mb-4"
+                        size={"5rem"}
+                    />
                     Vercel
                 </div>
 
                 <div className="text-center lg:hidden">
-                    <SiVercel className="mx-auto mb-4" size={"3.5rem"} />
+                    <SiVercel
+                        className="mx-auto mb-4"
+                        size={"3.5rem"}
+                    />
                     Vercel
                 </div>
 
