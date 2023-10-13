@@ -3,7 +3,7 @@ import App from "./App";
 import { About } from "./components/about";
 import { TechStack } from "./components/stack";
 import { Projects } from "./components/projects";
-import { Contact } from "./components/contact";
+import { PhoneContact } from "./components/contact";
 
 export const MainCon = () => {
     return (
@@ -25,7 +25,7 @@ export const MainCon = () => {
                 />
                 <Route
                     path="/contact"
-                    element={<Contact />}
+                    element={<PhoneContact />}
                 />
             </Route>
         </Routes>

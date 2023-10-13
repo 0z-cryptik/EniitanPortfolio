@@ -1,4 +1,4 @@
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaLink } from "react-icons/fa";
 import { SiTailwindcss, SiAxios } from "react-icons/si";
 import { PiGithubLogo } from "react-icons/pi";
 import { GoLinkExternal } from "react-icons/go";
@@ -15,10 +15,20 @@ export const WeatherByEniitan = () => {
 	const { dark } = useList();
 
 	return (
-		<figure className="lg:w-[80%] lg:border lg:p-5 lg:rounded-xl mx-auto lg:mt-7 mt-[5rem]">
+		<figure className="lg:w-[80%] w-fit lg:border lg:p-5 lg:rounded-xl mx-auto lg:mt-7 mt-[5rem]">
 			<h1 className="lg:mx-auto w-fit text-xl font-semibold mb-5">
 				<span className="lg:hidden mr-1 text-2xl">&rarr;</span>
-				Weather By Eniitan
+				<span className="hidden lg:block">Weather By Eniitan</span>
+				<a
+					href="https://weather-by-eniitan.vercel.app"
+					target="_blank"
+					className="lg:block">
+					Weather By Eniitan
+					<FaLink
+						size={"1rem"}
+						className="-mt-1 inline ml-3"
+					/>
+				</a>
 			</h1>
 
 			<div
@@ -39,7 +49,8 @@ export const WeatherByEniitan = () => {
 					} transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
 					<a
 						className="mr-1"
-						href="https://github.com/0z-cryptik/news-by-eniitan">
+						href="https://github.com/0z-cryptik/news-by-eniitan"
+						target="_blank">
 						<PiGithubLogo
 							className="w-fit"
 							size={"9rem"}
@@ -48,7 +59,8 @@ export const WeatherByEniitan = () => {
 					</a>
 					<a
 						className=""
-						href="https://news-by-eniitan.vercel.app">
+						href="https://news-by-eniitan.vercel.app"
+						target="_blank">
 						<GoLinkExternal
 							className="w-fit"
 							size={"9rem"}
@@ -181,7 +193,8 @@ export const WeatherByEniitan = () => {
 				<span className="w-fit mx-auto hidden lg:flex flex-row mt-5 text-gray-500">
 					<a
 						className="lg:hover:text-red-600"
-						href="https://github.com/0z-cryptik/weather-by-eniitan">
+						href="https://github.com/0z-cryptik/weather-by-eniitan"
+						target="_blank">
 						<PiGithubLogo
 							className="mr-2"
 							size={"1.5rem"}
@@ -191,7 +204,8 @@ export const WeatherByEniitan = () => {
 
 					<a
 						className="lg:hover:text-red-600"
-						href="https://weather-by-eniitan.vercel.app">
+						href="https://weather-by-eniitan.vercel.app"
+						target="_blank">
 						<GoLinkExternal
 							size={"1.5rem"}
 							title="view site"
@@ -200,7 +214,9 @@ export const WeatherByEniitan = () => {
 				</span>
 
 				<span className="w-fit mx-auto lg:hidden flex flex-row mt-7">
-					<a href="https://weather-by-eniitan.vercel.app">
+					<a
+						href="https://weather-by-eniitan.vercel.app"
+						target="_blank">
 						<button className="bg-transparent border p-2 rounded-xl mr-5">
 							<GoLinkExternal
 								className="inline -mt-1 mr-1"
@@ -210,7 +226,9 @@ export const WeatherByEniitan = () => {
 						</button>
 					</a>
 
-					<a href="https://github.com/0z-cryptik/weather-by-eniitan">
+					<a
+						href="https://github.com/0z-cryptik/weather-by-eniitan"
+						target="_blank">
 						<button className="bg-transparent border p-2 rounded-xl">
 							<PiGithubLogo
 								className="inline -mt-1 mr-1"
