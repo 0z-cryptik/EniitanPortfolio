@@ -7,6 +7,7 @@ export const StateProvider = ({ children }) => {
     const [dark, setDark] = useState(true);
     const [stick, setStick] = useState(false);
     const [contactClick, setContactClick] = useState(false);
+    const [viewMenu, setViewMenu] = useState(false)
 
     return (
         <ListContext.Provider
@@ -17,6 +18,7 @@ export const StateProvider = ({ children }) => {
                 setContactClick,
                 stick,
                 setStick,
+                viewMenu, setViewMenu
             }}>
             {children}
         </ListContext.Provider>

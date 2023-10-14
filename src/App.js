@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import { NavBar, PhoneNavBar } from "./components/navbar";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -14,9 +14,11 @@ import { Img } from "react-image";
 import { AvatarLoader } from "./components/imgLoader";
 import { Outlet } from "react-router";
 import { SlOptionsVertical } from "react-icons/sl";
+import { Menu } from "./components/phoneMenu";
+import { Overlay } from "./components/overlay";
 
 const App = () => {
-	const { dark } = useList();
+	const { dark, viewMenu, setViewMenu } = useList();
 
 	return (
 		<div
@@ -35,11 +37,14 @@ const App = () => {
 				style={{ height: 150 }}
 				className="bg-gradient-to-b z-0 lg:hidden via-[#00b4d8] from-[#0077b6] to-[#3c6e71]">
 				<SlOptionsVertical
-					className="absolute right-4 top-5"
+					className={`absolute right-4 top-5 transition-transform ${viewMenu ? 'rotate-90': ''}`}
 					size={"1.5rem"}
-					
+					onClick={() => setViewMenu(!viewMenu)}
 				/>
+				<Menu />
 			</div>
+
+			<Overlay />
 
 			<Img
 				src={MyAvatar}
