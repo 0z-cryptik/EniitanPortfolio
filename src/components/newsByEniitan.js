@@ -21,7 +21,7 @@ export const NewsByEniitan = () => {
 				<a
 					href="https://news-by-eniitan.vercel.app"
 					target="_blank"
-					className="lg:block">
+					className="lg:hidden">
 					News By Eniitan
 					<FaLink
 						size={"1rem"}

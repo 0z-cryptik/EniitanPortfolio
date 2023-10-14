@@ -22,7 +22,7 @@ export const WeatherByEniitan = () => {
 				<a
 					href="https://weather-by-eniitan.vercel.app"
 					target="_blank"
-					className="lg:block">
+					className="lg:hidden">
 					Weather By Eniitan
 					<FaLink
 						size={"1rem"}

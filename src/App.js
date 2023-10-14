@@ -13,6 +13,7 @@ import MyAvatar from "./images/myAvatar.png";
 import { Img } from "react-image";
 import { AvatarLoader } from "./components/imgLoader";
 import { Outlet } from "react-router";
+import { SlOptionsVertical } from "react-icons/sl";
 
 const App = () => {
 	const { dark } = useList();
@@ -31,12 +32,18 @@ const App = () => {
 				style={{ height: 250 }}
 				className="bg-gradient-to-b hidden lg:block via-[#00b4d8] from-[#0077b6] to-[#3c6e71]"></div>
 			<div
-				style={{ height: 200 }}
-				className="bg-gradient-to-b lg:hidden via-[#00b4d8] from-[#0077b6] to-[#3c6e71]"></div>
+				style={{ height: 150 }}
+				className="bg-gradient-to-b z-0 lg:hidden via-[#00b4d8] from-[#0077b6] to-[#3c6e71]">
+				<SlOptionsVertical
+					className="absolute right-4 top-5"
+					size={"1.5rem"}
+					
+				/>
+			</div>
 
 			<Img
 				src={MyAvatar}
-				className="h-[8rem] w-[128px] border mx-auto rounded-full -mt-[3.5rem]"
+				className="h-[8rem] w-[128px] border mx-auto rounded-full lg:-mt-[3.5rem] -mt-[4rem] z-10"
 				loader={<AvatarLoader />}
 			/>
 
