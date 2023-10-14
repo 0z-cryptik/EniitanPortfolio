@@ -6,28 +6,28 @@ import { Projects } from "./components/projects";
 import { PhoneContact } from "./components/contact";
 
 export const MainCon = () => {
-    return (
-        <Routes>
-            <Route
-                path="/"
-                element={<App />}>
-                <Route
-                    path="/about"
-                    element={<About />}
-                />
-                <Route
-                    path="/tech-stack"
-                    element={<TechStack />}
-                />
-                <Route
-                    path="/projects"
-                    element={<Projects />}
-                />
-                <Route
-                    path="/contact"
-                    element={<PhoneContact />}
-                />
-            </Route>
-        </Routes>
-    );
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={<App />}>
+        <Route
+          path="/about"
+          element={<About />}
+        />
+        <Route
+          path="/tech-stack"
+          element={<TechStack />}
+        />
+        <Route
+          path="/projects"
+          element={<Projects />}
+        />
+        <Route
+          path="/contact"
+          element={<PhoneContact />}
+        />
+      </Route>
+    </Routes>
+  );
 };

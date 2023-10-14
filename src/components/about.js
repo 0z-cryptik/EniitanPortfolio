@@ -1,6 +1,10 @@
+import { useList } from "./stateProvider";
+
 export const About = () => {
+
+    const {viewMenu, dark} = useList()
     return (
-        <article className="lg:mt-6 mt-3 lg:ml-[3rem] lg:w-[60%] min-[100px]:max-md:px-5 bg-black text-white">
+        <article className={`lg:mt-6 mt-3 lg:ml-[3rem] lg:w-[60%] min-[100px]:max-md:px-5 ${dark ? 'bg-black text-white' : ''}`}>
             <h1 className="text-3xl hidden lg:block font-semibold border-b  mb-4">
                 About me
             </h1>
