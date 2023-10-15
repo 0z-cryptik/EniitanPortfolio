@@ -48,9 +48,8 @@ export const Footer = () => {
 
         <p
           id="copyright"
-          className="mt-3 text-sm">
-          &copy; {date(new Date())}
-          BuiltByEniitan
+          className="mt-3 text-xs">
+          &copy; {date(new Date())} BuiltByEniitan
         </p>
       </center>
     </footer>

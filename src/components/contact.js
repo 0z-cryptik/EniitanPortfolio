@@ -21,7 +21,7 @@ export const Contact = () => {
       id="contact"
       className={`border ${contactClick && dark ? "wobbleDark" : ""} ${
         contactClick && !dark ? "wobbleLight" : ""
-      } flex-grow h-fit mx-[2rem] min-[1180px]:mx-[3rem] min-[1250px]:mx-[5rem] flex flex-col p-5 rounded-md`}>
+      } flex-grow h-fit mx-[2rem] min-[1180px]:mx-[3rem] min-[1250px]:mx-[5rem] flex flex-col p-5 rounded-md transform-gpu`}>
       <h1 className="text-center text-xl font-bold">Reach me</h1>
 
       <a

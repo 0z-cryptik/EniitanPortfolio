@@ -26,7 +26,7 @@ export const About = () => {
         I learned Python for a few months, but then I started finding it
         boring. I didn't know why at the time, but now I realize it's
         because I wasn't clear on the type of problems I wanted to solve
-        with it. I just knew I wanted to become a developer and followed
+        with it. I just knew I wanted to become a developer and I followed
         the advice of many YouTube programmers who recommended Python as a
         good starting point. I was learning Python syntax without really
         knowing how to create meaningful software with it.
