@@ -20,3 +20,9 @@ export const Projects = () => {
     </section>
   );
 };
+
+export const PhoneProjects = () => (
+  <div className="lg:hidden">
+    <Projects />
+  </div>
+);

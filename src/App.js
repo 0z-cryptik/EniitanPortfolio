@@ -42,6 +42,7 @@ const App = () => {
           }`}
           size={"1.5rem"}
           onClick={() => setViewMenu(!viewMenu)}
+          color="white"
         />
         <Menu />
       </div>

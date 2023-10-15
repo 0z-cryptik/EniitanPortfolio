@@ -213,7 +213,10 @@ export const NewsByEniitan = () => {
           <a
             href="https://news-by-eniitan.vercel.app"
             target="_blank">
-            <button className="bg-transparent border p-2 rounded-xl mr-5">
+            <button
+              className={`bg-transparent border p-2 rounded-xl mr-5 ${
+                dark ? "" : "border-black"
+              }`}>
               <GoLinkExternal
                 className="inline -mt-1 mr-1"
                 size={"1rem"}
@@ -225,7 +228,10 @@ export const NewsByEniitan = () => {
           <a
             href="https://github.com/0z-cryptik/news-by-eniitan"
             target="_blank">
-            <button className="bg-transparent border p-2 rounded-xl">
+            <button
+              className={`bg-transparent border p-2 rounded-xl ${
+                dark ? "" : "border-black"
+              }`}>
               <PiGithubLogo
                 className="inline -mt-1 mr-1"
                 size={"1rem"}

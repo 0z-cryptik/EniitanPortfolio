@@ -1,14 +1,20 @@
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import { ImMail4 } from "react-icons/im";
+import { useList } from "./stateProvider";
 
 export const Footer = () => {
+  const { dark } = useList();
+
   const date = (dateObj) => {
     const year = dateObj.getFullYear();
     return year;
   };
 
   return (
-    <footer className="border-t-[0.5px] mt-[5rem] py-6 bg-[#121212] border-t-gray-600 text-gray-500 w-[100svw] lg:w-full">
+    <footer
+      className={`border-t-[0.5px] mt-[5rem] py-6 ${
+        dark ? "bg-[#121212] text-gray-500" : "bg-gray-700 text-gray-300"
+      } border-t-gray-600 w-[100svw] lg:w-full`}>
       <center>
         <span className="flex flex-row w-fit mx-auto mt-3">
           <a

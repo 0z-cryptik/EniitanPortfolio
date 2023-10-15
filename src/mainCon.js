@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router";
 import App from "./App";
-import { About } from "./components/about";
-import { TechStack } from "./components/stack";
-import { Projects } from "./components/projects";
+import { PhoneAbout } from "./components/about";
+import { PhoneStack } from "./components/stack";
+import { PhoneProjects } from "./components/projects";
 import { PhoneContact } from "./components/contact";
 
 export const MainCon = () => {
@@ -13,15 +13,15 @@ export const MainCon = () => {
         element={<App />}>
         <Route
           path="/about"
-          element={<About />}
+          element={<PhoneAbout />}
         />
         <Route
           path="/tech-stack"
-          element={<TechStack />}
+          element={<PhoneStack />}
         />
         <Route
           path="/projects"
-          element={<Projects />}
+          element={<PhoneProjects />}
         />
         <Route
           path="/contact"

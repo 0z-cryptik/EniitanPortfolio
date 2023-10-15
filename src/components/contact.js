@@ -93,61 +93,55 @@ export const Contact = () => {
 
 export const PhoneContact = () => {
   return (
-    <div className="flex flex-col text-lg h-[45svh] mt-5">
-      <span>
+    <div className="flex flex-col text-lg h-[45svh]">
+      <a
+        className="w-screen py-2 border-b"
+        href="mailto:enitanolawale0@gmail.com">
         &rarr;
-        <a
-          href="mailto:enitanolawale0@gmail.com"
-          className="ml-5">
-          <TbBrandGmail className="inline -mt-1 mr-1" />
-          enitanolawale0@gmail.com
-          <GoLinkExternal className="inline ml-2 -mt-1" />
-        </a>
-      </span>
+        <TbBrandGmail className="inline -mt-1 mr-1 ml-5" />
+        enitanolawale0@gmail.com
+        <GoLinkExternal className="inline ml-2 -mt-1" />
+      </a>
 
-      <span>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/enitan-a-b36527205"
+        className="w-screen py-2 border-b">
         &rarr;
-        <a
-          href="https://www.linkedin.com/in/enitan-a-b36527205"
-          className="ml-5">
-          <AiFillLinkedin className="inline -mt-1 mr-1" />
-          LinkedIn
-          <GoLinkExternal className="inline ml-2 -mt-1" />
-        </a>
-      </span>
+        <AiFillLinkedin className="inline ml-5 -mt-1 mr-1" />
+        LinkedIn
+        <GoLinkExternal className="inline ml-2 -mt-1" />
+      </a>
 
-      <span>
+      <a
+        className="w-screen py-2 border-b"
+        target="_blank"
+        href="https://t.me/eniitantheeg">
         &rarr;
-        <a
-          href="https://t.me/eniitantheeg"
-          className="ml-5">
-          <FaTelegram className="inline -mt-1 mr-1" />
-          Telegram
-          <GoLinkExternal className="inline ml-2 -mt-1" />
-        </a>
-      </span>
+        <FaTelegram className="inline ml-5 -mt-1 mr-1" />
+        Telegram
+        <GoLinkExternal className="inline ml-2 -mt-1" />
+      </a>
 
-      <span>
+      <a
+        className="w-screen py-2 border-b"
+        target="_blank"
+        href="https://github.com/0z-cryptik">
         &rarr;
-        <a
-          href="https://github.com/0z-cryptik"
-          className="ml-5">
-          <AiFillGithub className="inline -mt-1 mr-1" />
-          Github
-          <GoLinkExternal className="inline ml-2 -mt-1" />
-        </a>
-      </span>
+        <AiFillGithub className="inline -mt-1 mr-1 ml-5" />
+        Github
+        <GoLinkExternal className="inline ml-2 -mt-1" />
+      </a>
 
-      <span>
+      <a
+        target="_blank"
+        href="https://0zcryptik.hashnode.dev/"
+        className="w-screen py-2 border-b">
         &rarr;
-        <a
-          href="https://0zcryptik.hashnode.dev/"
-          className="ml-5">
-          <FaHashnode className="inline -mt-1 mr-1" />
-          Blog
-          <GoLinkExternal className="inline ml-2 -mt-1" />
-        </a>
-      </span>
+        <FaHashnode className="inline -mt-1 mr-1 ml-5" />
+        Blog
+        <GoLinkExternal className="inline ml-2 -mt-1" />
+      </a>
     </div>
   );
 };

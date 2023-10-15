@@ -65,7 +65,11 @@ export const PhoneNavBar = () => {
     <nav
       ref={element}
       className={`lg:hidden flex border-b-[0.5px] pt-3 flex-row  relative ${
-        sticky ? "sticky top-0 z-20 bg-black" : "mt-7"
+        sticky
+          ? `sticky top-0 z-20 ${
+              dark ? "bg-black text-white" : "bg-white text-black"
+            }`
+          : "mt-7"
       } text-center w-[100vw]`}>
       <Link
         to={"about"}

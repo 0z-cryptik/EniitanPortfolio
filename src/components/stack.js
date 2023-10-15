@@ -184,3 +184,9 @@ export const TechStack = () => {
     </section>
   );
 };
+
+export const PhoneStack = () => (
+  <div className="lg:hidden">
+    <TechStack />
+  </div>
+);
