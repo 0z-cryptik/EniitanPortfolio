@@ -1,18 +1,36 @@
 import { useList } from "./stateProvider";
 import { ThemeIconButton } from "react-simple-animated-dark-mode-button";
 import { FaHashnode, FaRegFilePdf } from "react-icons/fa6";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { TbBrandGmail } from "react-icons/tb";
 
 export const Menu = () => {
-  const { dark, setDark, viewMenu, setViewMenu } = useList();
+  const { dark, setDark, viewMenu } = useList();
 
   return (
     <div
       className={`w-[40%] md:max-lg:w-[25%] lg:hidden ${
         dark ? "bg-[#121212]" : "bg-gray-200"
       } flex flex-col top-12 p-2 z-40 h-fit fixed transform-gpu transition-transform ${
-        viewMenu ? "translate-x-[60vw] md:max-lg:translate-x-[75vw] shadow-lg" : "translate-x-[100vw]"
+        viewMenu
+          ? "translate-x-[60vw] md:max-lg:translate-x-[75vw] shadow-lg"
+          : "translate-x-[100vw]"
       }`}>
+      <a
+        className="mb-2"
+        href="mailto:enitanolawale0@gmail.com">
+        <TbBrandGmail className="inline -mt-1 mr-2" />
+        Email
+      </a>
+
+      <a
+        className="mb-2"
+        href="https://www.linkedin.com/in/enitan-a-b36527205"
+        target="_blank">
+        <AiFillLinkedin className="inline -mt-1 mr-2" />
+        LinkedIn
+      </a>
+
       <a className="mb-2">
         <FaRegFilePdf className="inline -mt-1 mr-2" />
         Resume

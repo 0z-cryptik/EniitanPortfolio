@@ -1,7 +1,11 @@
+import { useList } from "./stateProvider";
+
 export const Next = () => {
+  const { setViewMenu } = useList();
+
   return (
-    <section className="mt-[5rem] mx-[3rem] hidden lg:block">
-      <h1 className="text-3xl font-semibold border-b mb-4">
+    <section className="lg:mt-[5rem] mt-5 min-[412px]:max-[760px]:h-[44vh] lg:mx-[3rem] max-[912px]:px-3 md:max-lg:h-[59vh]">
+      <h1 className="lg:text-3xl text-lg font-semibold lg:border-b mb-4">
         What's next for me?
       </h1>
 
@@ -19,7 +23,19 @@ export const Next = () => {
           the job, and grow with the right opportunity. So, here I am,
           hoping you might be the one to give that to me.
         </p>
+
+        <p
+          onClick={() => setViewMenu(true)}
+          className="text-blue-600 underline mt-3 lg:hidden">
+          Contact Me
+        </p>
       </article>
     </section>
   );
 };
+
+export const PhoneNext = () => (
+  <div className="lg:hidden">
+    <Next />
+  </div>
+);

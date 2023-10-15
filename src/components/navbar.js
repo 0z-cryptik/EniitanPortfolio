@@ -99,12 +99,12 @@ export const PhoneNavBar = () => {
       </Link>
 
       <Link
-        to={"contact"}
-        onClick={() => setActive("contact")}
+        to={"plans"}
+        onClick={() => setActive("plans")}
         className={`w-1/4 pb-2 font-bold ${
-          active === "contact" ? "border-b-4 border-b-blue-700" : ""
+          active === "plans" ? "border-b-4 border-b-blue-700" : ""
         }`}>
-        Contact
+        My Future
       </Link>
     </nav>
   );

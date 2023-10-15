@@ -4,6 +4,7 @@ import { PhoneAbout } from "./components/about";
 import { PhoneStack } from "./components/stack";
 import { PhoneProjects } from "./components/projects";
 import { PhoneContact } from "./components/contact";
+import { PhoneNext } from "./components/next";
 import { useEffect } from "react";
 
 export const MainCon = () => {
@@ -31,8 +32,8 @@ export const MainCon = () => {
           element={<PhoneProjects />}
         />
         <Route
-          path="/contact"
-          element={<PhoneContact />}
+          path="/plans"
+          element={<PhoneNext />}
         />
       </Route>
     </Routes>
