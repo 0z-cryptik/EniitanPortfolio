@@ -8,10 +8,10 @@ export const Menu = () => {
 
   return (
     <div
-      className={`w-[40%] lg:hidden ${
+      className={`w-[40%] md:max-lg:w-[25%] lg:hidden ${
         dark ? "bg-[#121212]" : "bg-gray-200"
       } flex flex-col top-12 p-2 z-40 h-fit fixed transform-gpu transition-transform ${
-        viewMenu ? "translate-x-[60vw] shadow-lg" : "translate-x-[100vw]"
+        viewMenu ? "translate-x-[60vw] md:max-lg:translate-x-[75vw] shadow-lg" : "translate-x-[100vw]"
       }`}>
       <a className="mb-2">
         <FaRegFilePdf className="inline -mt-1 mr-2" />

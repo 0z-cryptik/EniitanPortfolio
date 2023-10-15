@@ -15,14 +15,13 @@ export const WeatherByEniitan = () => {
   const { dark } = useList();
 
   return (
-    <figure className="lg:w-[80%] w-fit lg:border lg:p-5 lg:rounded-xl mx-auto lg:mt-7 mt-[5rem]">
+    <figure className="lg:w-[80%] min-[300px]:w-fit lg:border lg:p-5 lg:rounded-xl mx-auto lg:mt-7 mt-[5rem]">
       <h1 className="lg:mx-auto w-fit text-xl font-semibold mb-5">
         <span className="lg:hidden mr-1 text-2xl">&rarr;</span>
-        <span className="hidden lg:block">Weather By Eniitan</span>
+
         <a
           href="https://weather-by-eniitan.vercel.app"
-          target="_blank"
-          className="lg:hidden">
+          target="_blank">
           Weather By Eniitan
           <FaLink
             size={"1rem"}
@@ -115,7 +114,7 @@ export const WeatherByEniitan = () => {
 
         <h2 className="my-5 text-lg font-bold border-b">Tech Stack</h2>
 
-        <div className="flex flex-row lg:font-semibold text-sm lg:text-base">
+        <div className="flex flex-row lg:font-semibold text-xs min-[300px]:text-sm lg:text-base">
           <div className="text-center mr-7 hidden lg:block">
             <FaReact
               color="rgb(96, 165, 250)"
@@ -125,7 +124,7 @@ export const WeatherByEniitan = () => {
             React JS
           </div>
 
-          <div className="text-center mr-7 lg:hidden">
+          <div className="text-center min-[300px]:mr-7 mr-3 lg:hidden">
             <FaReact
               color="rgb(96, 165, 250)"
               className="mx-auto mb-2"
@@ -134,7 +133,7 @@ export const WeatherByEniitan = () => {
             React JS
           </div>
 
-          <div className="text-center mr-7">
+          <div className="text-center min-[300px]:mr-7 mr-3">
             <img
               className="mx-auto h-[2rem] w-[2rem] lg:w-[3rem] mb-2"
               src={cssLogo}
@@ -151,7 +150,7 @@ export const WeatherByEniitan = () => {
             Tailwind CSS
           </div>
 
-          <div className="text-center mr-7 lg:hidden">
+          <div className="text-center min-[300px]:mr-7 mr-3 lg:hidden">
             <SiTailwindcss
               className="mx-auto mb-2"
               size={"2rem"}
@@ -168,7 +167,7 @@ export const WeatherByEniitan = () => {
             Axios
           </div>
 
-          <div className="text-center mr-7 lg:hidden">
+          <div className="text-center min-[300px]:mr-7 mr-3 lg:hidden">
             <SiAxios
               className="mx-auto mb-2"
               size={"2rem"}

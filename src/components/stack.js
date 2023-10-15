@@ -13,7 +13,7 @@ export const TechStack = () => {
   return (
     <section
       id="tech-stack"
-      className="lg:mt-[5rem] lg:mx-[3rem] min-[100px]:max-md:px-2">
+      className="lg:mt-[5rem] lg:mx-[3rem] min-[100px]:max-md:px-2 md:max-lg:h-[58vh]">
       <h1 className="text-3xl font-semibold border-b hidden lg:block">
         My Tech Stack
       </h1>
@@ -22,7 +22,7 @@ export const TechStack = () => {
         Programming languages and frameworks/libraries
       </h2>
 
-      <section className="grid grid-cols-4 min-[100px]:max-md:gap-y-4 lg:grid-cols-7 font-bold">
+      <section className="grid grid-cols-4 min-[100px]:max-lg:gap-y-4 lg:grid-cols-7 text-xs min-[300px]:text-base font-bold">
         <div className="text-center">
           <img
             className="lg:w-[5rem] w-[3.5rem] lg:h-[5rem] h-[3.5rem] mx-auto py-[0.2rem] mb-4"
@@ -130,7 +130,7 @@ export const TechStack = () => {
         Dev Tools
       </h2>
 
-      <section className="grid grid-cols-4 lg:grid-cols-7 font-bold">
+      <section className="grid grid-cols-4 lg:grid-cols-7 font-bold text-xs min-[300px]:text-base">
         <div className="text-center mt-7 hidden lg:block">
           <AiFillGithub
             className="mx-auto mb-4"
