@@ -72,7 +72,7 @@ export const PhoneNavBar = () => {
           : "mt-7"
       } text-center w-[100vw]`}>
       <Link
-        to={"about"}
+        to={"homepage"}
         onClick={() => setActive("about")}
         className={`w-1/4 pb-2 font-bold ${
           active === "about" ? "border-b-4 border-b-blue-700" : ""
