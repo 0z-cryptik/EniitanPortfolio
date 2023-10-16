@@ -19,10 +19,10 @@ export const TechStack = () => {
       </h1>
 
       <h2 className="lg:my-6 my-4 w-fit mx-auto lg:text-lg font-semibold">
-        Programming languages and frameworks/libraries
+        Languages and frameworks/libraries
       </h2>
 
-      <section className="grid grid-cols-4 min-[100px]:max-lg:gap-y-4 lg:grid-cols-7 text-xs min-[300px]:text-base font-bold">
+      <section className="grid grid-cols-4 min-[100px]:max-lg:gap-y-4 lg:grid-cols-7 text-xs min-[300px]:text-sm font-bold">
         <div className="text-center">
           <img
             className="lg:w-[5rem] w-[3.5rem] lg:h-[5rem] h-[3.5rem] mx-auto py-[0.2rem] mb-4"
@@ -130,7 +130,7 @@ export const TechStack = () => {
         Dev Tools
       </h2>
 
-      <section className="grid grid-cols-4 lg:grid-cols-7 font-bold text-xs min-[300px]:text-base">
+      <section className="grid grid-cols-4 lg:grid-cols-7 font-bold text-xs min-[300px]:text-sm">
         <div className="text-center mt-7 hidden lg:block">
           <AiFillGithub
             className="mx-auto mb-4"
