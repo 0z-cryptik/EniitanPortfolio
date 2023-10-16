@@ -1,7 +1,4 @@
-import { useList } from "./stateProvider";
-
 export const About = () => {
-  const { viewMenu, dark } = useList();
   return (
     <article
       className={`lg:mt-6 mt-3 lg:ml-[3rem] lg:w-[60%] md:max-lg:h-[59vh] min-[100px]:max-lg:px-5`}>
