@@ -3,6 +3,7 @@ import { ThemeIconButton } from "react-simple-animated-dark-mode-button";
 import { FaHashnode, FaRegFilePdf } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { TbBrandGmail } from "react-icons/tb";
+import CV from "../files/Enitan-Akinfenwa-dev-CV.pdf";
 
 export const Menu = () => {
   const { dark, setDark, viewMenu } = useList();
@@ -31,7 +32,10 @@ export const Menu = () => {
         LinkedIn
       </a>
 
-      <a className="mb-2">
+      <a
+        href={CV}
+        className="mb-2"
+        download={"Enitan Akinfenwa"}>
         <FaRegFilePdf className="inline -mt-1 mr-2" />
         Resume
       </a>
