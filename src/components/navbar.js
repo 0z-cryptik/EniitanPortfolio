@@ -64,13 +64,12 @@ export const PhoneNavBar = () => {
   return (
     <nav
       ref={element}
-      className={`lg:hidden flex border-b-[0.5px] pt-3 flex-row text-xs min-[300px]:text-base relative ${
-        sticky
-          ? `sticky top-0 z-20 ${
-              dark ? "bg-black text-white" : "bg-white text-black"
-            }`
-          : "mt-7"
-      } text-center w-[100vw]`}>
+      id="navbar"
+      className={`lg:hidden flex ${
+        dark ? "bg-black text-white" : "bg-white text-black"
+      } border-b-[0.5px] pt-3 flex-row text-xs min-[300px]:text-base relative ${
+        sticky ? `sticky top-0 z-20` : ""
+      } text-center w-[100vw] mt-7`}>
       <Link
         to={"homepage"}
         onClick={() => setActive("about")}
