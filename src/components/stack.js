@@ -23,7 +23,7 @@ export const TechStack = () => {
 
       <h2
         className={`lg:my-6 my-4 w-[80%] lg:w-fit text-center border-dotted max-lg:border-b ${
-          dark ? "border-red-700" : ""
+          dark ? "border-blue-700" : ""
         } mx-auto lg:text-lg font-semibold`}>
         Languages and frameworks/libraries
       </h2>
@@ -134,7 +134,7 @@ export const TechStack = () => {
 
       <h2
         className={`mt-9 mb-6 w-[80%] lg:w-fit text-center border-dotted max-lg:border-b ${
-          dark ? "border-red-700" : ""
+          dark ? "border-blue-700" : ""
         } mx-auto lg:text-lg font-semibold`}>
         Dev Tools
       </h2>
