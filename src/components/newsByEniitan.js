@@ -128,7 +128,7 @@ export const NewsByEniitan = () => {
 
           <div className="text-center min-[300px]:mr-7 mr-3">
             <img
-              className="mx-auto h-[2rem] w-[2rem] lg:w-[3rem] mb-2"
+              className="mx-auto h-[2rem] lg:h-[3rem] w-[2rem] lg:w-[3rem] mb-2"
               src={cssLogo}
             />
             CSS
@@ -216,7 +216,7 @@ export const NewsByEniitan = () => {
                 dark ? "" : "border-black"
               }`}>
               <GoLinkExternal
-                className="inline -mt-1 mr-1"
+                className="inline mr-1"
                 size={"1rem"}
               />
               View site
