@@ -37,6 +37,7 @@ export const Contact = () => {
 
       <a
         href="https://www.linkedin.com/in/enitan-a-b36527205"
+        target="_blank"
         className={`mb-2 transition-transform ${
           dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
         } lg:hover:scale-105`}>
@@ -53,6 +54,7 @@ export const Contact = () => {
 
       <a
         href="https://github.com/0z-cryptik"
+        target="_blank"
         className={`mb-2 transition-transform ${
           dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
         } lg:hover:scale-105`}>
@@ -69,6 +71,7 @@ export const Contact = () => {
 
       <a
         href="https://t.me/eniitantheeg"
+        target="_blank"
         className={`transition-transform ${
           dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
         } lg:hover:scale-105`}>

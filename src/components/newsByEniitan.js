@@ -98,10 +98,8 @@ export const NewsByEniitan = () => {
             selected mode and automatically applies it upon their return.
           </li>
           <li>
-            <b>Responsive Design:</b> The application is designed to
-            provide an optimal experience on phones, PCs and tablets, with
-            a user-friendly menu for easy navigation between different news
-            categories (on phones & tablets).
+            <b>News Search:</b> Users can search for news about topics and
+            events that interests them.
           </li>
         </ul>
 
