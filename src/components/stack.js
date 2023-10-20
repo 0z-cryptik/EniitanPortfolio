@@ -1,7 +1,13 @@
-import { SiTailwindcss, SiAxios, SiVercel } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiAxios,
+  SiVercel,
+  SiJquery,
+} from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { IoLogoNpm } from "react-icons/io";
+import { IoLogoSass } from "react-icons/io5";
 import htmlLogo from "../images/icons8-html-logo-480.png";
 import cssLogo from "../images/pngwing.com (2).png";
 import jsLogo from "../images/javascript-39404.png";
@@ -28,7 +34,7 @@ export const TechStack = () => {
         Languages and frameworks/libraries
       </h2>
 
-      <section className="grid grid-cols-4 min-[100px]:max-lg:gap-y-4 lg:grid-cols-7 text-xs min-[300px]:text-sm font-bold">
+      <section className="grid grid-cols-4 min-[100px]:max-lg:gap-y-4 lg:gap-y-[1.75rem] lg:grid-cols-7 text-xs min-[300px]:text-sm font-bold">
         <div className="text-center">
           <img
             className="lg:w-[5rem] w-[3.5rem] lg:h-[5rem] h-[3.5rem] mx-auto py-[0.2rem] mb-4"
@@ -73,12 +79,11 @@ export const TechStack = () => {
         </div>
 
         <div className="text-center hidden lg:block">
-          <span className="text-blue-400">
-            <SiTailwindcss
-              className="mx-auto mb-4"
-              size={"5rem"}
-            />
-          </span>
+          <SiTailwindcss
+            className="mx-auto mb-4"
+            size={"5rem"}
+            color="rgb(96, 165, 250)"
+          />
           Tailwind CSS
         </div>
 
@@ -91,10 +96,38 @@ export const TechStack = () => {
           Tailwind CSS
         </div>
 
-        <div className="text-center">
-          <img
-            className="mx-auto lg:w-[5rem] w-[3.5rem] mb-4"
-            src={jqLogo}
+        <div className="text-center hidden lg:block">
+          <IoLogoSass
+            className="mx-auto mb-4"
+            size={"5rem"}
+            color="#DC2A70"
+          />
+          Sass
+        </div>
+
+        <div className="text-center lg:hidden">
+          <IoLogoSass
+            color="#DC2A70"
+            className="mx-auto mb-4"
+            size={"3.5rem"}
+          />
+          Sass
+        </div>
+
+        <div className="text-center hidden lg:block">
+          <SiJquery
+            color="rgb(42, 134, 220)"
+            className="mx-auto mb-4"
+            size={"5rem"}
+          />
+          JQuery
+        </div>
+
+        <div className="text-center lg:hidden">
+          <SiJquery
+            color="rgb(42, 134, 220)"
+            className="mx-auto mb-4"
+            size={"3.5rem"}
           />
           JQuery
         </div>
@@ -107,7 +140,7 @@ export const TechStack = () => {
           Git
         </div>
 
-        <div className="text-center mt-7 hidden lg:block">
+        <div className="text-center hidden lg:block">
           <SiAxios
             className="mx-auto mb-4"
             size={"5rem"}
@@ -115,7 +148,7 @@ export const TechStack = () => {
           Axios
         </div>
 
-        <div className="text-center lg:mt-7 lg:hidden">
+        <div className="text-center lg:hidden">
           <SiAxios
             className="mx-auto mb-4"
             size={"3.5rem"}
@@ -123,7 +156,7 @@ export const TechStack = () => {
           Axios
         </div>
 
-        <div className="text-center lg:mt-7">
+        <div className="text-center">
           <img
             className="mx-auto lg:w-[5rem] w-[3.5rem] mb-4"
             src={pythonLogo}

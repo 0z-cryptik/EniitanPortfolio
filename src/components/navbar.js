@@ -3,6 +3,7 @@ import { useList } from "./stateProvider";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import useSticky from "./myhooks";
+import CV from "../files/Enitan-Akinfenwa-dev-CV.pdf";
 
 export const NavBar = () => {
   const { dark, setContactClick } = useList();
@@ -35,6 +36,8 @@ export const NavBar = () => {
         Stack
       </a>
       <a
+        href={CV}
+        download={"Enitan Akinfenwa"}
         className={`mr-[2rem] ${
           dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
         }`}>
