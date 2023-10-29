@@ -48,7 +48,7 @@ export const WeatherByEniitan = () => {
           } transition-opacity ease-linear absolute top-[33%] left-[33.5%] flex flex-row w-fit`}>
           <a
             className="mr-1"
-            href="https://github.com/0z-cryptik/news-by-eniitan"
+            href="https://github.com/0z-cryptik/weather-by-eniitan"
             target="_blank">
             <PiGithubLogo
               className="w-fit"
@@ -58,7 +58,7 @@ export const WeatherByEniitan = () => {
           </a>
           <a
             className=""
-            href="https://news-by-eniitan.vercel.app"
+            href="https://weather-by-eniitan.vercel.app"
             target="_blank">
             <GoLinkExternal
               className="w-fit"
