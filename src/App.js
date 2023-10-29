@@ -9,7 +9,7 @@ import { Projects } from "./components/projects";
 import { Next } from "./components/next";
 import { Footer } from "./components/footer";
 import { useList } from "./components/stateProvider";
-import MyAvatar from "./images/20231008_091428(1).jpg";
+import MyAvatar from "./images/20231016_085101.jpg";
 import { Img } from "react-image";
 import { AvatarLoader } from "./components/imgLoader";
 import { Outlet } from "react-router";
