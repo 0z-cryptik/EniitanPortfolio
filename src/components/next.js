@@ -1,4 +1,4 @@
-import { useList } from "./stateProvider";
+import { useList } from "../hooks/stateProvider";
 
 export const Next = () => {
   const { setViewMenu } = useList();

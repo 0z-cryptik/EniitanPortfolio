@@ -1,5 +1,5 @@
 import { ClipLoader } from "react-spinners";
-import { useList } from "./stateProvider";
+import { useList } from "../hooks/stateProvider";
 
 export const ImgLoader = () => {
   const { dark } = useList();

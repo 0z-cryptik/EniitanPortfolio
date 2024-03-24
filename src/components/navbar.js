@@ -1,5 +1,5 @@
 import { ModeToggle } from "./themeToggle";
-import { useList } from "./stateProvider";
+import { useList } from "../hooks/stateProvider";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import useSticky from "./myhooks";

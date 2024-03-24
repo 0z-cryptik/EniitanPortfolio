@@ -2,7 +2,7 @@ import {
   SiTailwindcss,
   SiAxios,
   SiVercel,
-  SiJquery,
+  SiJquery
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
@@ -14,7 +14,7 @@ import jsLogo from "../images/javascript-39404.png";
 import jqLogo from "../images/jquery.png";
 import gitLogo from "../images/pngwing.com.png";
 import pythonLogo from "../images/python.png";
-import { useList } from "./stateProvider";
+import { useList } from "../hooks/stateProvider";
 
 export const TechStack = () => {
   const { dark } = useList();

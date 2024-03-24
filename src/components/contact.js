@@ -1,7 +1,7 @@
 import { BsArrowUpRight } from "react-icons/bs";
 import { TbBrandGmail } from "react-icons/tb";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { useList } from "./stateProvider";
+import { useList } from "../hooks/stateProvider";
 import { FaTelegram } from "react-icons/fa6";
 
 export const Contact = () => {

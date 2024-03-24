@@ -8,7 +8,7 @@ import { TechStack } from "./components/stack";
 import { Projects } from "./components/projects";
 import { Next } from "./components/next";
 import { Footer } from "./components/footer";
-import { useList } from "./components/stateProvider";
+import { useList } from "./hooks/stateProvider";
 import MyAvatar from "./images/photo_2023-10-29_14-49-58.jpg";
 import { Img } from "react-image";
 import { AvatarLoader } from "./components/imgLoader";
@@ -16,6 +16,7 @@ import { Outlet } from "react-router";
 import { SlOptionsVertical } from "react-icons/sl";
 import { Menu } from "./components/phoneMenu";
 import { Overlay } from "./components/overlay";
+import { Header } from "./components/header";
 
 const App = () => {
   const { dark, viewMenu, setViewMenu } = useList();
@@ -23,29 +24,13 @@ const App = () => {
   return (
     <div
       id="body"
-      className={`${
-        dark
-          ? "bg-black text-white lg:w-full w-screen"
-          : "bg-white text-black lg:w-full w-screen"
+      className={`lg:w-full w-screen ${
+        dark ? "bg-black text-white" : "bg-white text-black"
       } ${viewMenu ? "fixed" : ""}`}>
       <NavBar />
 
-      <div
-        style={{ height: 250 }}
-        className="bg-gradient-to-b hidden lg:block via-[#00b4d8] from-[#0077b6] to-[#3c6e71]"></div>
-      <div
-        style={{ height: 150 }}
-        className="bg-gradient-to-b z-0 lg:hidden via-[#00b4d8] from-[#0077b6] to-[#3c6e71]">
-        <SlOptionsVertical
-          className={`absolute right-4 top-5 transition-transform ${
-            viewMenu ? "rotate-90" : ""
-          }`}
-          size={"1.5rem"}
-          onClick={() => setViewMenu(!viewMenu)}
-          color="white"
-        />
-        <Menu />
-      </div>
+      <Header device={'mobile'} />
+      <Header device={'computer'} />
 
       <Overlay />
 

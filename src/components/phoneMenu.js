@@ -1,4 +1,4 @@
-import { useList } from "./stateProvider";
+import { useList } from "../hooks/stateProvider";
 import { ThemeIconButton } from "react-simple-animated-dark-mode-button";
 import { FaHashnode, FaRegFilePdf } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";

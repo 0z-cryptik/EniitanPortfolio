@@ -3,7 +3,7 @@ import { SiTailwindcss, SiAxios } from "react-icons/si";
 import { PiGithubLogo } from "react-icons/pi";
 import { GoLinkExternal } from "react-icons/go";
 import { useState } from "react";
-import { useList } from "./stateProvider";
+import { useList } from "../hooks/stateProvider";
 import weatherPic from "../images/weatherByEniitan.png";
 import cssLogo from "../images/pngwing.com (2).png";
 import rapidAPIlogo from "../images/rapidapi-icon.svg";
