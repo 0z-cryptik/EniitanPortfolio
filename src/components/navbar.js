@@ -2,11 +2,11 @@ import { ModeToggle } from "./themeToggle";
 import { useList } from "../hooks/stateProvider";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import useSticky from "./myhooks";
-import CV from "../files/Enitan-Akinfenwa-dev-CV.pdf";
+import useSticky from "../hooks/myhooks";
+import { NavLink, PhoneNavLink } from "./navBarLinks";
 
 export const NavBar = () => {
-  const { dark, setContactClick } = useList();
+  const { dark } = useList();
 
   return (
     <nav
@@ -14,44 +14,20 @@ export const NavBar = () => {
       className={`hidden justify-center py-3 lg:flex flex-row fixed w-full z-10 ${
         dark ? "bg-[#140F2D] text-white" : "bg-[#bde0fe] text-black"
       }`}>
-      <a
-        href="https://0zcryptik.hashnode.dev/"
-        className={`mr-[2rem] ${
-          dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
-        }`}>
-        Blog
-      </a>
-      <a
-        href="#projects"
-        className={`mr-[2rem] ${
-          dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
-        }`}>
-        Projects
-      </a>
-      <a
-        href="#tech-stack"
-        className={`mr-[2rem] ${
-          dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
-        }`}>
-        Stack
-      </a>
-      <a
-        href={CV}
-        download={"Enitan Akinfenwa"}
-        className={`mr-[2rem] ${
-          dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
-        }`}>
-        Resume
-      </a>
-      <a
-        href="#top"
-        onClick={() => setContactClick(true)}
-        className={`${
-          dark ? "lg:hover:text-red-700" : "lg:hover:text-blue-700"
-        }`}>
-        Contact
-      </a>
-
+      <NavLink
+        category={"Blog"}
+        link={'"https://0zcryptik.hashnode.dev/"'}
+      />
+      <NavLink
+        category={"Projects"}
+        link={"#projects"}
+      />
+      <NavLink
+        category={"Stack"}
+        link={"#tech-stack"}
+      />
+      <NavLink category={"Resume"} />
+      <NavLink category={"Contact"} />
       <ModeToggle />
     </nav>
   );
@@ -73,23 +49,10 @@ export const PhoneNavBar = () => {
       } border-b-[0.5px] pt-3 flex-row text-xs min-[300px]:text-base relative ${
         sticky ? `sticky top-0 z-20` : ""
       } text-center w-[100vw] mt-7`}>
-      <Link
-        to={"homepage"}
-        onClick={() => setActive("about")}
-        className={`w-1/4 pb-2 font-bold ${
-          active === "about" ? "border-b-4 border-b-blue-700" : ""
-        }`}>
-        About Me
-      </Link>
 
-      <Link
-        to={"tech-stack"}
-        onClick={() => setActive("stack")}
-        className={`w-1/4 pb-2 font-bold ${
-          active === "stack" ? "border-b-4 border-b-blue-700" : ""
-        }`}>
-        Tech Stack
-      </Link>
+      <PhoneNavLink link={'homepage'} activeCat={'about'} category={'About Me'} />
+
+      <PhoneNavLink link={'tech-stack'} activeCat={'stack'} category={'Tech Stack'} />
 
       <Link
         to={"projects"}
