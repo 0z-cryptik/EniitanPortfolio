@@ -35,42 +35,50 @@ export const NavBar = () => {
 
 export const PhoneNavBar = () => {
   const { dark } = useList();
-
   const { sticky, element } = useSticky();
+  const {active, setActive} = useList()
 
-  const [active, setActive] = useState("about");
+  const style = `lg:hidden flex ${
+    dark ? "bg-black text-white" : "bg-white text-black"
+  } border-b-[0.5px] pt-3 flex-row text-xs min-[300px]:text-base relative ${
+    sticky ? `sticky top-0 z-20` : ""
+  } text-center w-[100vw] mt-7`;
+
+  const clickHandler = (arg) => {
+    setActive(arg)
+  }
 
   return (
     <nav
       ref={element}
       id="navbar"
-      className={`lg:hidden flex ${
-        dark ? "bg-black text-white" : "bg-white text-black"
-      } border-b-[0.5px] pt-3 flex-row text-xs min-[300px]:text-base relative ${
-        sticky ? `sticky top-0 z-20` : ""
-      } text-center w-[100vw] mt-7`}>
+      className={style}>
+      <PhoneNavLink
+        link={"homepage"}
+        activeCat={"about"}
+        category={"About Me"}
+        clickHandler={() => clickHandler('about')}
+      />
 
-      <PhoneNavLink link={'homepage'} activeCat={'about'} category={'About Me'} />
+      <PhoneNavLink
+        link={"tech-stack"}
+        activeCat={"stack"}
+        category={"Tech Stack"}
+        clickHandler={() => clickHandler('stack')}
+      />
 
-      <PhoneNavLink link={'tech-stack'} activeCat={'stack'} category={'Tech Stack'} />
-
-      <Link
-        to={"projects"}
-        onClick={() => setActive("projects")}
-        className={`w-1/4 pb-2 font-bold ${
-          active === "projects" ? "border-b-4 border-b-blue-700" : ""
-        }`}>
-        Projects
-      </Link>
-
-      <Link
-        to={"plans"}
-        onClick={() => setActive("plans")}
-        className={`w-1/4 pb-2 font-bold ${
-          active === "plans" ? "border-b-4 border-b-blue-700" : ""
-        }`}>
-        My Future
-      </Link>
+      <PhoneNavLink
+        link={"projects"}
+        activeCat={"projects"}
+        category={"Projects"}
+        clickHandler={() => clickHandler('projects')}
+      />
+      <PhoneNavLink
+        link={"plans"}
+        activeCat={"plans"}
+        category={"My Future"}
+        clickHandler={() => clickHandler('plans')}
+      />
     </nav>
   );
 };

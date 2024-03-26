@@ -43,12 +43,18 @@ export const NavLink = ({ category, link }) => {
   );
 };
 
-export const PhoneNavLink = ({ link, activeCat, category }) => {
-    const [active, setActive] = useState("about");
+export const PhoneNavLink = ({
+  link,
+  activeCat,
+  category,
+  clickHandler
+}) => {
+  const { active } = useList();
+
   return (
     <Link
       to={link}
-      onClick={() => setActive(activeCat)}
+      onClick={clickHandler}
       className={`w-1/4 pb-2 font-bold ${
         active === activeCat ? "border-b-4 border-b-blue-700" : ""
       }`}>
