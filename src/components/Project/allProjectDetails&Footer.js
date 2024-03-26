@@ -26,8 +26,8 @@ export const ProjectDetails = ({ project }) => {
         <WBE_TechStack />
 
         <ProjectFooter
-          repoLink={"https://github.com/0z-cryptik/weather-by-eniitan"}
-          siteLink={"https://weather-by-eniitan.vercel.app"}
+          repoLink={"https://github.com/0z-cryptik/weather-by-eniitan2"}
+          siteLink={"https://weather-by-eniitan2.vercel.app"}
         />
       </figcaption>
     );
