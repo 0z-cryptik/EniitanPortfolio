@@ -1,4 +1,4 @@
-import { useList } from "../hooks/stateProvider";
+import { useList } from "../../hooks/stateProvider";
 import { PiGithubLogo } from "react-icons/pi";
 import { GoLinkExternal } from "react-icons/go";
 

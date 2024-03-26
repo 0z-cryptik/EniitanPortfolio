@@ -1,10 +1,10 @@
 import { SlOptionsVertical } from "react-icons/sl";
-import { useList } from "../hooks/stateProvider";
-import { Menu } from "./phoneMenu";
+import { useList } from "../../hooks/stateProvider";
+import { Menu } from "../Details/phoneMenu";
 import { Img } from "react-image";
-import MyAvatar from "../images/photo_2023-10-29_14-49-58.jpg";
-import { AvatarLoader } from "./imgLoader";
-import { Details } from "./details";
+import MyAvatar from "../../images/photo_2023-10-29_14-49-58.jpg";
+import { AvatarLoader } from "../Project/imgLoader";
+import { Details } from "../Details/details";
 
 export const Header = ({ device }) => {
   const { viewMenu, setViewMenu } = useList();

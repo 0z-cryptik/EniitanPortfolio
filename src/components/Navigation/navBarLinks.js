@@ -1,7 +1,6 @@
-import { useList } from "../hooks/stateProvider";
-import CV from "../files/Enitan-Akinfenwa-dev-CV.pdf";
+import { useList } from "../../hooks/stateProvider";
+import CV from "../../files/Enitan-Akinfenwa-dev-CV.pdf";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export const NavLink = ({ category, link }) => {
   const { dark, setContactClick } = useList();

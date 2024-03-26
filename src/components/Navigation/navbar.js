@@ -1,8 +1,6 @@
-import { ModeToggle } from "./themeToggle";
-import { useList } from "../hooks/stateProvider";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import useSticky from "../hooks/myhooks";
+import { ModeToggle } from "../Peripherals/themeToggle";
+import { useList } from "../../hooks/stateProvider";
+import useSticky from "../../hooks/myhooks";
 import { NavLink, PhoneNavLink } from "./navBarLinks";
 
 export const NavBar = () => {
@@ -36,7 +34,7 @@ export const NavBar = () => {
 export const PhoneNavBar = () => {
   const { dark } = useList();
   const { sticky, element } = useSticky();
-  const {active, setActive} = useList()
+  const { active, setActive } = useList();
 
   const style = `lg:hidden flex ${
     dark ? "bg-black text-white" : "bg-white text-black"
@@ -45,8 +43,8 @@ export const PhoneNavBar = () => {
   } text-center w-[100vw] mt-7`;
 
   const clickHandler = (arg) => {
-    setActive(arg)
-  }
+    setActive(arg);
+  };
 
   return (
     <nav
@@ -57,27 +55,27 @@ export const PhoneNavBar = () => {
         link={"homepage"}
         activeCat={"about"}
         category={"About Me"}
-        clickHandler={() => clickHandler('about')}
+        clickHandler={() => clickHandler("about")}
       />
 
       <PhoneNavLink
         link={"tech-stack"}
         activeCat={"stack"}
         category={"Tech Stack"}
-        clickHandler={() => clickHandler('stack')}
+        clickHandler={() => clickHandler("stack")}
       />
 
       <PhoneNavLink
         link={"projects"}
         activeCat={"projects"}
         category={"Projects"}
-        clickHandler={() => clickHandler('projects')}
+        clickHandler={() => clickHandler("projects")}
       />
       <PhoneNavLink
         link={"plans"}
         activeCat={"plans"}
         category={"My Future"}
-        clickHandler={() => clickHandler('plans')}
+        clickHandler={() => clickHandler("plans")}
       />
     </nav>
   );

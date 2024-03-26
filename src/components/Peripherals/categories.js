@@ -1,8 +1,8 @@
-import { About } from "./about";
-import { Contact } from "./contact";
-import { TechStack } from "./stack";
-import { Projects } from "./projects";
-import { Next } from "./next";
+import { About } from '../Details/about';
+import { Contact } from "../Details/contact";
+import { TechStack } from "../Tech Stack/stack";
+import { Projects } from "../Project/projects";
+import { Next } from "../Details/next";
 
 export const Categories = () => {
   return (

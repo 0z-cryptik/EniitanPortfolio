@@ -1,4 +1,4 @@
-import weatherPic from "../images/weatherByEniitan.png";
+import weatherPic from "../../images/weatherByEniitan.png";
 import { ProjectHeader } from "./projectHeader";
 import { ProjectDetails } from "./allProjectDetails&Footer";
 import { ProjectImage } from "./projectImage";

@@ -1,7 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiAxios, SiNewyorktimes } from "react-icons/si";
-import cssLogo from "../images/pngwing.com (2).png";
-import rapidAPIlogo from "../images/rapidapi-icon.svg";
+import cssLogo from "../../images/pngwing.com (2).png";
+import rapidAPIlogo from "../../images/rapidapi-icon.svg";
 
 export const NBE_TechStack = () => {
   return (

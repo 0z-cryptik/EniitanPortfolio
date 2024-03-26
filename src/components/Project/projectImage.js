@@ -1,7 +1,7 @@
 import { Img } from "react-image";
 import { ImgLoader } from "./imgLoader";
 import { HoverLinks } from "./hoverlinks";
-import { useList } from "../hooks/stateProvider";
+import { useList } from "../../hooks/stateProvider";
 
 export const ProjectImage = ({ src, repoURL, siteURL }) => {
   const { dark, hover, setHover } = useList();

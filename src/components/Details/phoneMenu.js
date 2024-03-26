@@ -1,9 +1,9 @@
-import { useList } from "../hooks/stateProvider";
+import { useList } from "../../hooks/stateProvider";
 import { ThemeIconButton } from "react-simple-animated-dark-mode-button";
 import { FaHashnode, FaRegFilePdf } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { TbBrandGmail } from "react-icons/tb";
-import CV from "../files/Enitan-Akinfenwa-dev-CV.pdf";
+import CV from "../../files/Enitan-Akinfenwa-dev-CV.pdf";
 
 export const Menu = () => {
   const { dark, setDark, viewMenu } = useList();

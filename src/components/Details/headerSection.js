@@ -1,4 +1,4 @@
-import { ProfilePicandDetails, Header } from "./header";
+import { ProfilePicandDetails, Header } from "../Peripherals/header";
 
 export const HeaderSection = () => {
   return (

@@ -1,9 +1,9 @@
 import { Route, Routes, useNavigate } from "react-router";
 import App from "./App";
-import { PhoneAbout, } from "./components/about";
-import { PhoneStack } from "./components/stack";
-import { PhoneProjects } from "./components/projects";
-import { PhoneNext } from "./components/next";
+import { PhoneAbout } from "./components/Details/about";
+import { PhoneStack } from "./components/Tech Stack/stack";
+import { PhoneProjects } from "./components/Project/projects";
+import { PhoneNext } from "./components/Details/next";
 import { useEffect } from "react";
 
 export const MainCon = () => {

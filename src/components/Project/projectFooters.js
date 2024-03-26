@@ -1,6 +1,6 @@
 import { PiGithubLogo } from "react-icons/pi";
 import { GoLinkExternal } from "react-icons/go";
-import { useList } from "../hooks/stateProvider";
+import { useList } from "../../hooks/stateProvider";
 
 export const ProjectFooter = ({ repoLink, siteLink }) => {
   const { dark } = useList();

@@ -1,4 +1,4 @@
-import newsPic from "../images/newsByEniitan.png";
+import newsPic from "../../images/newsByEniitan.png";
 import { ProjectHeader } from "./projectHeader";
 import { ProjectDetails } from "./allProjectDetails&Footer";
 import { ProjectImage } from "./projectImage";

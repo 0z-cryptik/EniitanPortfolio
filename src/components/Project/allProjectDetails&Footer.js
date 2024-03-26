@@ -18,16 +18,18 @@ export const ProjectDetails = ({ project }) => {
     );
   }
 
-  if (project === 'WBE'){
-    return <figcaption>
-    <WBE_ProjectDetails />
+  if (project === "WBE") {
+    return (
+      <figcaption>
+        <WBE_ProjectDetails />
 
-    <WBE_TechStack />
+        <WBE_TechStack />
 
-    <ProjectFooter
-      repoLink={"https://github.com/0z-cryptik/weather-by-eniitan"}
-      siteLink={"https://weather-by-eniitan.vercel.app"}
-    />
-  </figcaption>
+        <ProjectFooter
+          repoLink={"https://github.com/0z-cryptik/weather-by-eniitan"}
+          siteLink={"https://weather-by-eniitan.vercel.app"}
+        />
+      </figcaption>
+    );
   }
 };

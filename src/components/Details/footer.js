@@ -1,6 +1,6 @@
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import { ImMail4 } from "react-icons/im";
-import { useList } from "../hooks/stateProvider";
+import { useList } from "../../hooks/stateProvider";
 
 export const Footer = () => {
   const { dark } = useList();

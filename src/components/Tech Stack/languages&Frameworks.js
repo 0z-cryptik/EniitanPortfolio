@@ -1,32 +1,18 @@
-import {
-  SiTailwindcss,
-  SiAxios,
-  SiVercel,
-  SiJquery
-} from "react-icons/si";
+import { useList } from "../../hooks/stateProvider";
+import { SiTailwindcss, SiAxios, SiJquery } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
-import { IoLogoNpm } from "react-icons/io";
 import { IoLogoSass } from "react-icons/io5";
-import htmlLogo from "../images/icons8-html-logo-480.png";
-import cssLogo from "../images/pngwing.com (2).png";
-import jsLogo from "../images/javascript-39404.png";
-import jqLogo from "../images/jquery.png";
-import gitLogo from "../images/pngwing.com.png";
-import pythonLogo from "../images/python.png";
-import { useList } from "../hooks/stateProvider";
+import htmlLogo from "../../images/icons8-html-logo-480.png";
+import cssLogo from "../../images/pngwing.com (2).png";
+import jsLogo from "../../images/javascript-39404.png";
+import gitLogo from "../../images/pngwing.com.png";
+import pythonLogo from "../../images/python.png";
 
-export const TechStack = () => {
+export const LanguagesAndFrameworks = () => {
   const { dark } = useList();
 
   return (
-    <section
-      id="tech-stack"
-      className="lg:mt-[5rem] lg:mx-[3rem] min-[100px]:max-md:px-2 md:max-lg:h-[58vh]">
-      <h1 className="text-3xl font-semibold border-b hidden lg:block">
-        My Tech Stack
-      </h1>
-
+    <>
       <h2
         className={`lg:my-6 my-4 w-[80%] lg:w-fit text-center border-dotted max-lg:border-b ${
           dark ? "border-blue-700" : ""
@@ -164,71 +150,6 @@ export const TechStack = () => {
           Python
         </div>
       </section>
-
-      <h2
-        className={`mt-9 mb-6 w-[80%] lg:w-fit text-center border-dotted max-lg:border-b ${
-          dark ? "border-blue-700" : ""
-        } mx-auto lg:text-lg font-semibold`}>
-        Dev Tools
-      </h2>
-
-      <section className="grid grid-cols-4 lg:grid-cols-7 font-bold text-xs min-[300px]:text-sm">
-        <div className="text-center mt-7 hidden lg:block">
-          <AiFillGithub
-            className="mx-auto mb-4"
-            size={"5rem"}
-          />
-          Github
-        </div>
-
-        <div className="text-center lg:hidden">
-          <AiFillGithub
-            className="mx-auto mb-4"
-            size={"3.5rem"}
-          />
-          Github
-        </div>
-
-        <div className="text-center mt-7 hidden lg:block">
-          <SiVercel
-            className="mx-auto mb-4"
-            size={"5rem"}
-          />
-          Vercel
-        </div>
-
-        <div className="text-center lg:hidden">
-          <SiVercel
-            className="mx-auto mb-4"
-            size={"3.5rem"}
-          />
-          Vercel
-        </div>
-
-        <div className="text-center mt-7 hidden lg:block">
-          <IoLogoNpm
-            className="mx-auto mb-4"
-            size={"5rem"}
-            color="red"
-          />
-          Node Package Manager
-        </div>
-
-        <div className="text-center lg:hidden">
-          <IoLogoNpm
-            className="mx-auto mb-4"
-            size={"3.5rem"}
-            color="red"
-          />
-          Node Package Manager
-        </div>
-      </section>
-    </section>
+    </>
   );
 };
-
-export const PhoneStack = () => (
-  <div className="lg:hidden">
-    <TechStack />
-  </div>
-);
